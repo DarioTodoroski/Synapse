@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Models\Contact;
+use App\Http\Controllers\QuestionController;
+use App\Models\Question;
+
 
 Route::post('/contact', [ContactController::class, 'store']);
 Route::get('/contact', function () {
@@ -11,8 +14,21 @@ Route::get('/contact', function () {
 
 Route::get('/admin/contacts', function () {
     $contacts = Contact::latest()->get();
-    return view('admin.contacts', compact('contacts'));
+    $questions = Question::latest()->get();
+
+    return view('admin.contacts', compact('contacts', 'questions'));
 });
+
 Route::get('/home', function () {
     return view('home');
+});
+
+
+Route::post('/questions', [QuestionController::class, 'store'])
+    ->name('questions.store');
+
+Route::get('/admin/questions', function () {
+    $questions = \App\Models\Question::latest()->get();
+
+    return view('admin.questions', compact('questions'));
 });

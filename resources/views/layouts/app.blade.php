@@ -26,7 +26,7 @@
     </header>
 
     <!-- PAGE CONTENT -->
-    <main class="p-6 ">
+    <main class="">
         @yield('content')
     </main>
 
