@@ -61,6 +61,44 @@
     </div>
 </div>
 
+<!-- 3 -->
+<div class="flex flex-col font-sans justify-center items-center pt-24">
+    <p class="font-light text-[16px] text-[#5B52A3]">ДОЗНАЈ ПОВЕЌЕ ЗА НАС</p>
+    <p class="text-[48px] font-bold ">Зошто SynapseHR?</p>
+    <div class="flex space-x-8 pt-7">
+        <div class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-md shadow-[#5B52A34D] bg-white py-[43px] px-[36px] rounded-2xl">
+            <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-full">
+                <i class="fa-solid fa-magnifying-glass text-gray-700"></i>
+            </div>            
+            <p class="text-[20px] pt-3 font-semibold">Практичен пристап</p>
+            <p class="text-[15px] pt-6 font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+        </div>
+        <div class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-md shadow-[#5B52A34D] bg-white py-[43px] px-[36px] rounded-2xl">
+            <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-full">
+                <i class="fa-solid fa-magnifying-glass text-gray-700"></i>
+            </div>            
+            <p class="text-[20px] pt-3 font-semibold">Практичен пристап</p>
+            <p class="text-[15px] pt-6 font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+        </div>
+        <div class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-md shadow-[#5B52A34D] bg-white py-[43px] px-[36px] rounded-2xl">
+            <div class="w-14 h-14 flex items-center justify-center bg-gray-200 rounded-full">
+                <i class="fa-solid fa-magnifying-glass text-gray-700"></i>
+            </div>            
+            <p class="text-[20px] pt-3 font-semibold">Практичен пристап</p>
+            <p class="text-[15px] pt-6 font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+        </div>
+    </div>
+</div>
+<div class="px-12 pt-14">
+    <div class="px-12 py-11 bg-gradient-to-r font-sans font-light from-[#5B52A3] to-[#7AB5A8] text-white p-6 rounded-3xl flex flex-col gap-2">
+        <div class="absolute right-35  w-[64px] h-[64px]  flex items-center justify-center bg-[#FFFFFF33] rounded-full">
+            <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </div>  
+        <p class="text-[30px]">Компании од различни индустрии нѝ веруваат</p>
+        <p class="text-[16px] w-[90%]">кога треба да изградат јасна структура, функционални процеси и организациска култура што поддржува стабилен и одржлив раст, без разлика дали се работи за конкретен предизвик или поширока трансформација, ние ја избираме и вклучуваме најсоодветната експертиза од нашиот тим и мрежа на партнери.</p>
+    </div>
+</div>
+
 
 
 @endsection
