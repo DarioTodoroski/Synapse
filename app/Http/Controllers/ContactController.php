@@ -17,7 +17,6 @@ class ContactController extends Controller
         ]);
 
         Contact::create($validated);
-
-        return response()->json(['message' => 'Saved successfully']);
+        return redirect('/academy')->with('success', 'Успешно зачувано!');
     }
 }

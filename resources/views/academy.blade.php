@@ -79,7 +79,7 @@
     </div>
 </div>
  
-        <div class="absolute bg-white rounded-[28px] shadow-2xl flex flex-col bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 lg:left-auto lg:right-6 lg:translate-x-0"
+        <div class="absolute bg-white  rounded-[28px] shadow-2xl flex flex-col bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 lg:left-auto lg:right-6 lg:translate-x-0"
              style="
                 width: calc(100% - 32px);
                 max-width: 340px;
@@ -91,34 +91,19 @@
                 Брза пријава
             </h3>
  
-            <div class="flex flex-col flex-1" style="gap: 14px;">
- 
-                <input type="text"
-                       placeholder="Име и презиме"
-                       class="w-full rounded-2xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 text-[15px] outline-none focus:border-[#5B52A3] transition-colors shrink-0"
-                       style="height: 46px;" />
- 
-                <input type="text"
-                       placeholder="Компанија"
-                       class="w-full rounded-2xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 text-[15px] outline-none focus:border-[#5B52A3] transition-colors shrink-0"
-                       style="height: 46px;" />
- 
-                <input type="email"
-                       placeholder="Емаил"
-                       class="w-full rounded-2xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 text-[15px] outline-none focus:border-[#5B52A3] transition-colors shrink-0"
-                       style="height: 46px;" />
- 
-                <input type="text"
-                       placeholder="Телефонски број"
-                       class="w-full rounded-2xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 text-[15px] outline-none focus:border-[#5B52A3] transition-colors shrink-0"
-                       style="height: 46px;" />
- 
-                <button class="w-full rounded-2xl bg-[#5B52A3] hover:bg-[#4f4794] transition-colors text-white text-[15px] shrink-0"
-                        style="height: 48px; margin-top: 4px;">
-                    Испрати пријава
-                </button>
- 
-            </div>
+<form method="POST" action="{{ route('academy.store') }}">
+    @csrf
+
+    <input type="text" name="full_name" class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]" placeholder="Име и презиме"><br><br>
+
+    <input type="text" name="company" class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]" placeholder="Компанија"><br><br>
+
+    <input type="email" name="email" class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]" placeholder="Емаил"><br><br>
+
+    <input type="text" name="phone" class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]" placeholder="Телефонски број"><br><br>
+
+    <button class="w-full bg-[#5B52A3] py-2.5 -mt-4 text-white font-light rounded-2xl" type="submit">Испрати пријава</button>
+</form>
  
         </div>
  

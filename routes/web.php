@@ -7,10 +7,7 @@ use App\Http\Controllers\QuestionController;
 use App\Models\Question;
 
 
-Route::post('/contact', [ContactController::class, 'store']);
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::post('/academy', [ContactController::class, 'store'])->name('academy.store');
 
 Route::get('/admin/contacts', function () {
     $contacts = Contact::latest()->get();
@@ -36,3 +33,5 @@ Route::get('/admin/questions', function () {
 Route::get('/academy', function () {
     return view('academy');
 });
+
+
