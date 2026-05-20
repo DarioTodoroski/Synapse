@@ -15,13 +15,15 @@
         <div class="w-[25%]">
             <img class="w-48" src="{{ asset('img/logo.png') }}">
         </div>
-        <div class="flex items-center w-[75%] text-[16px] text-[#364153] justify-end gap-14">
+        <div class="flex items-center w-[75%] text-[16px] text-[#364153] justify-end gap-12">
             <a href="/home">Почетна</a>
-            <a>За нас</a>
-            <a href="/academy">Школа за менаџирање со луѓе</a>
-            <a>Новости</a>
+            <a>Што е SPM?</a>
+            <a>За кого е наменета?</a>
+            <a>SMP 2026</a>
+            <a>Програми и модули</a>
+            <a>Пријава</a>
             <a>Контакт</a>
-            <a class="bg-[#5B52A3] rounded-xl px-5 text-white py-2">Закажи средба</a>
+            
         </div>
     </header>
 
