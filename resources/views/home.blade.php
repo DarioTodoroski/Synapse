@@ -6,14 +6,14 @@
 <div class="flex pt-14 font-sans px-6 font-light flex-col justify-center items-center">
     <img src="{{ asset('img/elipse1.png') }}" class="absolute top-33 left-34 w-[271px] h-[271px]"/>
     <img src="{{ asset('img/elipse2.png') }}" class="absolute bottom-33 right-38 w-[271px] h-[271px]"/>
-    <p class="text-[14px] text-[#00786F] bg-[#F0FDFA] px-5 py-2 border-[#CBFBF1] border-2 rounded-full">✦ Нудиме целосни, стратешки и практични HR решенија на едно место</p>
-    <div class="pt-5 flex flex-col -space-y-5 ">
+    <p data-aos="fade-left" class="text-[14px] text-[#00786F] bg-[#F0FDFA] px-5 py-2 border-[#CBFBF1] border-2 rounded-full">✦ Нудиме целосни, стратешки и практични HR решенија на едно место</p>
+    <div data-aos="fade-right" class="pt-5 flex flex-col -space-y-5 ">
         <p class="text-[67px] text-center px-20 font-extrabold text-[#101828]">Им помагаме на</p>
         <p class="text-[67px] text-center px-20 font-extrabold text-[#101828]">организациите да растат</p>
         <p class="text-[67px] text-center px-20 font-extrabold bg-gradient-to-r from-[#5B52A3] to-[#7AB5A8] bg-clip-text text-transparent">преку луѓето </p>
     </div> 
-    <p class="pt-5 text-center text-[20px] text-[#4A5565]">Ги поддржуваме компаниите да изградат силни тимови, ефективно лидерство и <br/>HR процеси што носат долгорочни резултати.</p>
-    <div class="flex gap-5 pt-12">
+    <p data-aos="fade-left" class="pt-5 text-center text-[20px] text-[#4A5565]">Ги поддржуваме компаниите да изградат силни тимови, ефективно лидерство и <br/>HR процеси што носат долгорочни резултати.</p>
+    <div data-aos="fade-right" class="flex gap-5 pt-12">
         <a class="bg-[#5B52A3] rounded-xl px-9 text-white py-2">Контактирајте нѐ →</a>
         <a class="border-2 bg-white border-[#D1D5DC] rounded-xl px-4 py-2">Пребарајте услуги</a>
     </div>
@@ -72,13 +72,13 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
         
-        <div class="flex flex-col justify-center items-start lg:pr-4 mb-6 md:mb-0">
+        <div data-aos="fade-right" class="flex flex-col justify-center items-start lg:pr-4 mb-6 md:mb-0">
             <p class="text-[14px] font-semibold text-[#5B52A3] uppercase tracking-wider mb-2">НАШИ УСЛУГИ</p>
             <p class="text-[#101828] font-bold text-3xl md:text-[38px] leading-tight mb-4">Стратегиски HR</p>
             <p class="text-[#4A5565] font-light text-lg md:text-[20px] leading-relaxed">Ги поврзуваме бизнис целите со HR практиките за создавање усогласени, стабилни и успешни тимови.</p>
         </div>
 
-        <div @click="openModal('01')" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
+        <div @click="openModal('01')" data-aos="fade-up" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
             <div>
                 <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Стратегиски HR и организациски развој</p>
                 <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Ги усогласуваме HR процесите со растот на компанијата преку современи стратегии, структури и системи.</p>
@@ -86,7 +86,7 @@
             <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('02')" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#7AB5A8]">
+        <div @click="openModal('02')" data-aos="fade-left" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#7AB5A8]">
             <div>
                 <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Менаџирање со перформанси</p>
                 <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Поставување и каскадирање на цели, оценка на учинок, KPI и фидбек</p>
@@ -94,7 +94,7 @@
             <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('03')" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
+        <div @click="openModal('03')" data-aos="fade-right" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
             <div>
                 <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Развој на вработени <br/>и кариера</p>
                 <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Развиваме лидери и тимови преку практични програми, обуки и алатки што создаваат реален импакт.</p>
@@ -102,7 +102,7 @@
             <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('04')" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#7AB5A8]">
+        <div @click="openModal('04')" data-aos="fade-up" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#7AB5A8]">
             <div>
                 <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Менторство и обуки</p>
                 <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Обуки за менаџери, HR академии, менторство, развој на лидерски и HR компетенции, градење професионални заедници</p>
@@ -110,7 +110,7 @@
             <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('05')" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
+        <div @click="openModal('05')" data-aos="fade-left" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
             <div>
                 <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">HR решенија по мерка</p>
                 <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Преку анализа, заедничко дефинирање на приоритети и дизајн создаваме фокусирани и применливи решенија</p>
@@ -165,24 +165,24 @@
 
 <!-- 3 -->
 <div class="flex flex-col px-6 font-sans justify-center items-center pt-24">
-    <p class="font-light text-[16px] text-[#5B52A3]">ДОЗНАЈ ПОВЕЌЕ ЗА НАС</p>
-    <p class="text-[48px] font-bold ">Зошто SynapseHR?</p>
+    <p data-aos="fade-up" class="font-light text-[16px] text-[#5B52A3]">ДОЗНАЈ ПОВЕЌЕ ЗА НАС</p>
+    <p data-aos="fade-up" class="text-[48px] font-bold ">Зошто SynapseHR?</p>
     <div class="flex space-x-8 pt-7">
-        <div class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
+        <div data-aos="fade-right" class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
             <div class="w-14 h-14 flex items-center justify-center border-2 border-[#E5E7EB] bg-[#eeedf6] rounded-full">
                 <i class="fa-solid fa-magnifying-glass text-[#5B52A3]"></i>
             </div>            
             <p class="text-[20px] pt-3 font-semibold">Практичен пристап</p>
             <p class="text-[15px] pt-6 font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
         </div>
-        <div class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
+        <div data-aos="fade-up" class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
             <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#f2f7f6] rounded-full">
                 <i class="fa-regular fa-lightbulb text-[#7AB5A8] text-[20px] "></i>
             </div>            
             <p class="text-[20px] pt-3 font-semibold">Искуство и експертиза</p>
             <p class="text-[15px] pt-6 font-light">Нашиот тим комбинира HR знаење, бизнис разбирање и практично искуство од различни индустрии.</p>
         </div>
-        <div class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
+        <div data-aos="fade-left" class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
             <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#eeedf6] rounded-full">
                 <i class="fa-solid fa-wrench text-[20px] text-[#5B52A3]"></i>
             </div>            
@@ -191,7 +191,7 @@
         </div>
     </div>
 </div>
-<div class="px-12 px-6 pt-14">
+<div data-aos="fade-up" class="px-12 px-6 pt-14">
     <div class="px-12 py-11 bg-gradient-to-r font-sans font-light from-[#5B52A3] to-[#7AB5A8] text-white p-6 rounded-3xl flex flex-col gap-2">
         <div class="absolute right-35  w-[64px] h-[64px]  flex items-center justify-center bg-[#FFFFFF33] rounded-full">
             <i class="fa-solid fa-user-group text-[22px]"></i>        
@@ -203,10 +203,10 @@
 
 <!-- 4 -->
 <div class="flex px-6 font-sans items-center pt-18 pb-24">
-    <div class="w-1/2 px-14">
+    <div data-aos="fade-right" class="w-1/2 px-14">
         <img src="{{ asset('img/peopleworking.png') }}" />
     </div>
-    <div class="flex flex-col">
+    <div data-aos="fade-left" class="flex flex-col">
         <p class="text-[14px] text-[#5B52A3]">КАКО РАБОТИМЕ?</p>
         <p class="font-bold text-[36px] pt-2">Принципи на работа </p>
         <div class="flex space-x-6 pt-9">
@@ -261,7 +261,7 @@
 </div>
 
 <!-- 5 -->
-<div  class="py-12 font-sans flex  bg-cover bg-center" style="background-image: url('{{ asset('img/bg.png') }}')">
+<div data-aos="fade-up" class="py-12 font-sans flex  bg-cover bg-center" style="background-image: url('{{ asset('img/bg.png') }}')">
     <div id="levo" class="w-1/2  pl-36 py-11 flex flex-col justify-center">
         <p class="bg-[#FFFFFF1A] text-white font-light text-[14px] border-[#FFFFFF33] border-2 rounded-full w-[220px] px-3 py-2 text-center">🎓 Континуирано учење</p>
         <div class="text-[48px] pt-4 text-white font-bold flex flex-col -space-y-4">
@@ -337,16 +337,16 @@
     <div class="max-w-7xl mx-auto">
         <div class="font-sans flex flex-col items-center">
 
-            <p class="text-sm text-[#7AB5A8] font-light uppercase tracking-wider mb-2">ПОВЕЌЕ ЗА КОИ СЕ SYNAPSEHR</p>
-            <p class="font-semibold text-3xl md:text-5xl text-[#101828] mb-6 text-center">Нашиот тим</p>
-            <p class="text-base md:text-xl text-[#4A5565] font-light max-w-4xl text-center mb-12">
+            <p data-aos="fade-right" class="text-sm text-[#7AB5A8] font-light uppercase tracking-wider mb-2">ПОВЕЌЕ ЗА КОИ СЕ SYNAPSEHR</p>
+            <p data-aos="fade-left" class="font-semibold text-3xl md:text-5xl text-[#101828] mb-6 text-center">Нашиот тим</p>
+            <p data-aos="fade-right"class="text-base md:text-xl text-[#4A5565] font-light max-w-4xl text-center mb-12">
                 SynapseHR е колектив на докажани HR консултанти кои го здружуваат своето долгогодишно корпоративно
                 искуство за да понудат системски, стратегиски и практични решенија.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-right" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/tomida.png') }}" alt="Томида" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Томида Караиванова Алаѓозовска</p>
@@ -355,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-right" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/ana.png') }}" alt="Ана" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Ана Костовска</p>
@@ -364,7 +364,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-left" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/ivana.png') }}" alt="Ивана" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Ивана Дојчиновска Стојановиќ</p>
@@ -373,7 +373,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-left" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/iskra.png') }}" alt="Искра" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Искра Конеска</p>
@@ -384,7 +384,7 @@
 
             </div>
 
-            <p class="text-[#4A5565] text-base md:text-xl max-w-5xl mt-16 font-light text-center">
+            <p data-aos="fade-up" class="text-[#4A5565] text-base md:text-xl max-w-5xl mt-16 font-light text-center">
                 Ова не е само академска теорија пренесена од учебник. Ова е знаење изградено низ реални менаџерски предизвици, трансформации, раст на компании и работа со тимови во комплексни организациски системи, како и бројни консултантски часови.
             </p>
         </div>
@@ -443,7 +443,7 @@
     <div class="max-w-6xl mx-auto px-6">
 
         <!-- Heading -->
-        <div class="text-center mb-14">
+        <div data-aos="fade-up" class="text-center mb-14">
             <h2 class="text-[40px] font-bold text-[#0D1730]">
                 Често поставувани прашања
             </h2>
@@ -454,7 +454,7 @@
         </div>
 
         <!-- FAQ -->
-        <div class="space-y-6 flex flex-col items-center">
+        <div data-aos="fade-up" class="space-y-6 flex flex-col items-center">
 
             <!-- Item -->
             <div x-data="{ open: true }"
@@ -678,7 +678,7 @@
 <!-- AlpineJS -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
- <section class=" py-12 px-4">
+ <section data-aos="fade-right" class=" py-12 px-4">
             <div class="max-w-6xl mx-auto bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
 
                 <div class="absolute top-0 left-0 right-0 h-2.5 pointer-events-none"
@@ -735,7 +735,7 @@
         </section>
 
 <!-- form -->
-<div class="min-h-screen flex items-center justify-center h-[470px]   bg-[#f5f5f5] font-sans py-16 px-6">
+<div data-aos="fade-left" class="min-h-screen flex items-center justify-center h-[470px]   bg-[#f5f5f5] font-sans py-16 px-6">
     <div class="max-w-[1600px] mx-auto bg-white rounded-[35px] p-10 shadow-[0_3px_12px_#7AB5A866]">
 
         <form action="{{ route('questions.store') }}" method="POST">

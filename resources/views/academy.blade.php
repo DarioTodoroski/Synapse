@@ -9,7 +9,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
                 <!-- LEFT -->
-                <div class="flex flex-col">
+                <div data-aos="fade-right" class="flex flex-col">
 
                     <div
                         class="inline-flex items-center gap-2 border border-[#CBFBF1] bg-[#F0FDFA] rounded-full px-5 py-2 text-[#4A5565] text-[15px] w-fit">
@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- RIGHT -->
-                <div class="relative flex justify-center lg:justify-start items-start mt-16">
+                <div data-aos="fade-left" class="relative flex justify-center lg:justify-start items-start mt-16">
 
                     <div class="relative w-full max-w-[569px]">
 
@@ -128,7 +128,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
 
                 <!-- CARD 1 -->
-                <div class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col" style="min-height: 280px;">
+                <div data-aos="fade-right" class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col" style="min-height: 280px;">
 
                     <div
                         class="w-[72px] h-[72px] rounded-[22px] bg-[#F4F1FF] flex items-center justify-center mb-7 shrink-0">
@@ -152,7 +152,7 @@
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col" style="min-height: 280px;">
+                <div data-aos="fade-right" class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col" style="min-height: 280px;">
 
                     <div
                         class="w-[72px] h-[72px] rounded-[22px] bg-[#EEF8F5] flex items-center justify-center mb-7 shrink-0">
@@ -177,7 +177,7 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col" style="min-height: 280px;">
+                <div data-aos="fade-left" class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col" style="min-height: 280px;">
 
                     <div
                         class="w-[72px] h-[72px] rounded-[22px] bg-[#F4F1FF] flex items-center justify-center mb-7 shrink-0">
@@ -200,7 +200,7 @@
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col " style="min-height: 280px;">
+                <div data-aos="fade-left" class="bg-white rounded-[28px] px-7 py-8 shadow-md flex flex-col " style="min-height: 280px;">
 
                     <div
                         class="w-[72px] h-[72px] rounded-[22px] bg-[#EEF8F5] flex items-center justify-center mb-7 shrink-0">
@@ -227,7 +227,7 @@
         </section>
 
         <!-- WHY SECTION -->
-        <section class="max-w-5xl mx-auto text-center pt-28 px-6 lg:px-8">
+        <section data-aos="fade-up" class="max-w-5xl mx-auto text-center pt-28 px-6 lg:px-8">
 
             <h2 class="text-[42px] md:text-[52px] font-semibold text-[#101828] leading-[1.1]">
                 Зошто ви е потребна SPM?
@@ -245,7 +245,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
 
-        <div class="bg-white rounded-[32px] shadow-[0_6px_24px_rgba(0,0,0,0.08)] w-full h-full flex flex-col px-6 sm:px-10 py-8 sm:py-10 text-center">
+        <div data-aos="fade-right" class="bg-white rounded-[32px] shadow-[0_6px_24px_rgba(0,0,0,0.08)] w-full h-full flex flex-col px-6 sm:px-10 py-8 sm:py-10 text-center">
             
             <div class="w-[70px] h-[70px] bg-[#F3F4F6] rounded-full mx-auto flex items-center justify-center mb-8 shrink-0">
                 <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -268,7 +268,7 @@
 
         </div>
 
-        <div class="bg-white rounded-[32px] shadow-[0_6px_24px_rgba(0,0,0,0.08)] w-full h-full flex flex-col px-6 sm:px-10 py-8 sm:py-10 text-center">
+        <div data-aos="fade-left" class="bg-white rounded-[32px] shadow-[0_6px_24px_rgba(0,0,0,0.08)] w-full h-full flex flex-col px-6 sm:px-10 py-8 sm:py-10 text-center">
             
             <div class="w-[70px] h-[70px] bg-[#FFF1F1] rounded-full mx-auto flex items-center justify-center mb-8 shrink-0">
                 <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -295,7 +295,7 @@
 </section>
 
         <!-- BANNER -->
-        <section class="max-w-7xl mx-auto px-6 lg:px-8 pt-12">
+        <section data-aos="fade-up" class="max-w-7xl mx-auto px-6 lg:px-8 pt-12">
 
             <div
                 class="rounded-[28px] px-10 lg:px-14 py-7 bg-gradient-to-r from-[#5B52A3] via-[#7096C1] to-[#7AB5A8] flex items-center justify-between gap-6">
@@ -322,7 +322,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                <div class="relative bg-white rounded-[28px] shadow-md p-10 pl-[2.5rem] overflow-hidden">
+                <div data-aos="fade-right" class="relative bg-white rounded-[28px] shadow-md p-10 pl-[2.5rem] overflow-hidden">
 
                     <!-- gradient border -->
                     <div
@@ -344,7 +344,7 @@
 
                 </div>
 
-                <div class="relative bg-white rounded-[28px] shadow-md p-10 pl-[2.5rem] overflow-hidden">
+                <div data-aos="fade-left" class="relative bg-white rounded-[28px] shadow-md p-10 pl-[2.5rem] overflow-hidden">
 
                     <!-- gradient border -->
                     <div
@@ -372,7 +372,7 @@
             </div>
 
         </section>
-        <section class=" py-16 px-4">
+        <section data-aos="fade-up" class=" py-16 px-4">
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-[48px] font-bold text-[#101828] mb-12">За кого е наменета?</h2>
 
@@ -465,46 +465,46 @@
        <section class="py-16 px-4 md:px-8 lg:px-28">
     <div class="max-w-7xl mx-auto">
         
-        <span class="text-sm md:text-[18px] font-light tracking-wider text-[#5B52A3] uppercase block mb-3">SPM 2026</span>
+        <span data-aos="fade-right" class="text-sm md:text-[18px] font-light tracking-wider text-[#5B52A3] uppercase block mb-3">SPM 2026</span>
         
-        <h2 class="text-3xl md:text-[36px] font-extrabold text-[#101828] mb-4 w-full lg:w-[60%] leading-tight">
+        <h2 data-aos="fade-right" class="text-3xl md:text-[36px] font-extrabold text-[#101828] mb-4 w-full lg:w-[60%] leading-tight">
             SPM Прва програма за лидерство во <span
                 class="bg-gradient-to-r from-[#5B52A3] to-[#5BA3A1] bg-clip-text text-transparent">производствени
                 компании</span>
         </h2>
         
-        <p class="text-[#475569] mb-10 text-light text-base md:text-[18px]">Се фокусира на реалните предизвици на менаџерите во
+        <p data-aos="fade-right"     class="text-[#475569] mb-10 text-light text-base md:text-[18px]">Се фокусира на реалните предизвици на менаџерите во
             производствени компании:</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-10">
             
-            <div class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5BA3A1] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
+            <div data-aos="fade-right" class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5BA3A1] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
                 Управување со различни профили на вработени (директни и индиректни)
             </div>
             
-            <div class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5B52A3] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
+            <div data-aos="fade-left" class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5B52A3] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
                 Баланс помеѓу оперативна извонредност и лидерство
             </div>
             
-            <div class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5B52A3] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
+            <div data-aos="fade-right" class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5B52A3] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
                 Усогласување на тимовите со производствени цели, KPI и оперативни планови
             </div>
             
-            <div class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5BA3A1] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
+            <div data-aos="fade-left" class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5BA3A1] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
                 Водење луѓе во услови на континуирано подобрување (continuous improvement)
             </div>
             
-            <div class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5BA3A1] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
+            <div data-aos="fade-right" class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5BA3A1] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
                 Координација помеѓу производство, одржување, квалитет и поддржувачки функции
             </div>
             
-            <div class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5B52A3] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
+            <div data-aos="fade-left" class="bg-white w-full px-5 py-6 md:px-6 md:py-8 rounded-xl shadow-sm border-l-4 border-[#5B52A3] font-medium text-[#101828] text-base md:text-[19px] flex items-center min-h-[84px]">
                 Управување со мотивација и дисциплина на луѓе и тимови во производствен систем
             </div>
             
         </div>
 
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+        <div data-aos="fade-up" class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
             <div class="bg-white border border-[#E2E8F0] px-6 py-6 rounded-xl font-medium text-[#101828] flex-1 text-center sm:text-left shadow-sm">
                 Практични решенија за секојдневни ситуации од производствена средина.
             </div>
@@ -573,7 +573,7 @@
         }">
 
             <div class="w-[90%] max-w-[90%] mx-auto">
-                <div class="text-center mb-12">
+                <div data-aos="fade-up" class="text-center mb-12">
                     <span class="text-xs font-bold tracking-widest text-[#5B52A3] uppercase block mb-3">Модули и
                         програми</span>
                     <h2 class="text-3xl md:text-5xl font-black text-[#101828] leading-tight mb-4">
@@ -611,7 +611,7 @@
                 </div>
 
                 <div class="space-y-4 mb-8">
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5BA3A1] opacity-70 leading-none">01</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Од експерт до менаџер</h4>
@@ -623,7 +623,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5B52A3] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5B52A3] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5B52A3] opacity-70 leading-none">02</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Организациско однесување и комуникација</h4>
@@ -635,7 +635,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5BA3A1] opacity-70 leading-none">03</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Ангажираност и задржување на вработените</h4>
@@ -647,7 +647,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5B52A3] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5B52A3] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5B52A3] opacity-70 leading-none">04</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Управување со перформанси и одговорност</h4>
@@ -660,7 +660,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5BA3A1] opacity-70 leading-none">05</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Развој на вработени, таленти и наследници
@@ -673,7 +673,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5B52A3] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5B52A3] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5B52A3] opacity-70 leading-none">06</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Емоционална интелигенција и управување со
@@ -687,7 +687,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
+                    <div data-aos="fade-left" class="bg-white rounded-2xl p-6 shadow-sm border-l-[6px] border-[#5BA3A1] flex items-start gap-6">
                         <span class="text-3xl md:text-4xl font-extrabold text-[#5BA3A1] opacity-70 leading-none">07</span>
                         <div class="flex-1">
                             <h4 class="text-xl font-bold text-[#101828] mb-1">Управување со промени и отпорност</h4>
@@ -700,7 +700,7 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center mb-6">
+                <div data-aos="fade-up" class="flex justify-center mb-6">
                     <div class="rounded-3xl w-full px-8 py-12 text-center text-white relative overflow-hidden shadow-lg flex flex-col items-center justify-center"
                         style="background: linear-gradient(135deg, #5B52A3 0%, #5BA3A1 100%);">
                         <div class="mb-3">
@@ -716,7 +716,7 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center mb-16">
+                <div data-aos="fade-up" class="flex justify-center mb-16">
                     <div
                         class="bg-white rounded-2xl p-6 shadow-sm w-full text-center relative overflow-hidden border-t-[10px] border-[#5B52A3]">
                         <p class="text-[#101828] font-semibold text-base md:text-lg px-2 leading-relaxed">
@@ -805,16 +805,16 @@
     <div class="max-w-7xl mx-auto">
         <div class="font-sans flex flex-col items-center">
 
-            <p class="text-sm text-[#7AB5A8] font-light uppercase tracking-wider mb-2">ПОВЕЌЕ ЗА КОИ СЕ SYNAPSEHR</p>
-            <p class="font-semibold text-3xl md:text-5xl text-[#101828] mb-6 text-center">Нашиот тим</p>
-            <p class="text-base md:text-xl text-[#4A5565] font-light max-w-4xl text-center mb-12">
+            <p data-aos="fade-right" class="text-sm text-[#7AB5A8] font-light uppercase tracking-wider mb-2">ПОВЕЌЕ ЗА КОИ СЕ SYNAPSEHR</p>
+            <p data-aos="fade-left" class="font-semibold text-3xl md:text-5xl text-[#101828] mb-6 text-center">Нашиот тим</p>
+            <p data-aos="fade-right" class="text-base md:text-xl text-[#4A5565] font-light max-w-4xl text-center mb-12">
                 SynapseHR е колектив на докажани HR консултанти кои го здружуваат своето долгогодишно корпоративно
                 искуство за да понудат системски, стратегиски и практични решенија.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-right" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/tomida.png') }}" alt="Томида" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Томида Караиванова Алаѓозовска</p>
@@ -823,7 +823,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-right" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/ana.png') }}" alt="Ана" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Ана Костовска</p>
@@ -832,7 +832,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-left" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/ivana.png') }}" alt="Ивана" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Ивана Дојчиновска Стојановиќ</p>
@@ -841,7 +841,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
+                <div data-aos="fade-left" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
                     <img class="w-full h-auto object-cover" src="{{ asset('img/iskra.png') }}" alt="Искра" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Искра Конеска</p>
@@ -852,7 +852,7 @@
 
             </div>
 
-            <p class="text-[#4A5565] text-base md:text-xl max-w-5xl mt-16 font-light text-center">
+            <p data-aos="fade-up" class="text-[#4A5565] text-base md:text-xl max-w-5xl mt-16 font-light text-center">
                 Ова не е само академска теорија пренесена од учебник. Ова е знаење изградено низ реални менаџерски предизвици, трансформации, раст на компании и работа со тимови во комплексни организациски системи, како и бројни консултантски часови.
             </p>
         </div>
@@ -908,7 +908,7 @@
        <section class="py-16 px-4 md:px-8">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-        <div class="space-y-8 max-w-xl mx-auto lg:mx-0 w-full">
+        <div data-aos="fade-right" class="space-y-8 max-w-xl mx-auto lg:mx-0 w-full">
             <h2 class="text-3xl md:text-4xl font-bold text-[#101828]">Пријава за Првата програма</h2>
             <p class="text-[#4A5565] font-light text-[18px] leading-relaxed">
                 Обезбедете место за вашиот тим во првата група. Бројот на места е ограничен за да се обезбеди висока интерактивност и индивидуална менторска поддршка.
@@ -956,7 +956,7 @@
             </div>
         </div>
 
-        <div class="bg-white w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto rounded-3xl p-6 sm:p-8 shadow-xl border border-[#EEF2F6]">
+        <div data-aos="fade-left" class="bg-white w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto rounded-3xl p-6 sm:p-8 shadow-xl border border-[#EEF2F6]">
             <form action="{{ route('applications.store') }}" method="POST" class="space-y-5">
                 @csrf
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -1005,7 +1005,7 @@
     </div>
 </section>
 
-        <section class="relative w-full py-20 px-6 text-white overflow-hidden"
+        <section data-aos="fade-up" class="relative w-full py-20 px-6 text-white overflow-hidden"
             style="background: linear-gradient(135deg, #5B52A3 0%, #5BA3A1 100%);">
             <div
                 class="absolute top-12 right-[40%] w-10 h-10 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
@@ -1097,7 +1097,7 @@
             </div>
         </section>
 
-        <section class=" py-12 px-4">
+        <section data-aos="fade-up" class=" py-12 px-4">
             <div class="max-w-6xl mx-auto bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
 
                 <div class="absolute top-0 left-0 right-0 h-2.5 pointer-events-none"

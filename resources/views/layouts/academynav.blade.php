@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>My App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
 </head>
@@ -31,6 +31,13 @@
     <main class="">
         @yield('content')
     </main>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // This initializes the animations
+    AOS.init({
+        duration: 800, // How long the animation takes (in milliseconds)
+        once: true,    // Whether animation should happen only once while scrolling down
+    });
+</script>
 </body>
 </html>
