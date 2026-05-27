@@ -149,7 +149,7 @@
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-2xl font-bold text-[#101828]" x-text="activeService.title"></h3>
                     <button @click="openServiceModal = false" class="text-gray-400 hover:text-[#101828] transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        <svg class="w-6 h-6 hover:cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>
                 
@@ -164,25 +164,25 @@
 </section>
 
 <!-- 3 -->
-<div class="flex flex-col px-6 font-sans justify-center items-center pt-24">
+<div class="flex flex-col px-6 font-sans justify-center items-center pt-6">
     <p data-aos="fade-up" class="font-light text-[16px] text-[#5B52A3]">ДОЗНАЈ ПОВЕЌЕ ЗА НАС</p>
     <p data-aos="fade-up" class="text-[48px] font-bold ">Зошто SynapseHR?</p>
     <div class="flex space-x-8 pt-7">
-        <div data-aos="fade-right" class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
+        <div  class=" hover:scale-105 transition-all duration-500 ease-in-out w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
             <div class="w-14 h-14 flex items-center justify-center border-2 border-[#E5E7EB] bg-[#eeedf6] rounded-full">
                 <i class="fa-solid fa-magnifying-glass text-[#5B52A3]"></i>
             </div>            
             <p class="text-[20px] pt-3 font-semibold">Практичен пристап</p>
             <p class="text-[15px] pt-6 font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
         </div>
-        <div data-aos="fade-up" class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
+        <div  class=" hover:scale-105 transition-all duration-500 ease-in-out w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
             <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#f2f7f6] rounded-full">
                 <i class="fa-regular fa-lightbulb text-[#7AB5A8] text-[20px] "></i>
             </div>            
             <p class="text-[20px] pt-3 font-semibold">Искуство и експертиза</p>
             <p class="text-[15px] pt-6 font-light">Нашиот тим комбинира HR знаење, бизнис разбирање и практично искуство од различни индустрии.</p>
         </div>
-        <div data-aos="fade-left" class="w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
+        <div  class=" hover:scale-105 transition-all duration-500 ease-in-out w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
             <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#eeedf6] rounded-full">
                 <i class="fa-solid fa-wrench text-[20px] text-[#5B52A3]"></i>
             </div>            
@@ -202,7 +202,7 @@
 </div>
 
 <!-- 4 -->
-<div class="flex px-6 font-sans items-center pt-18 pb-24">
+<div class="flex px-6 font-sans items-center pt-22 pb-24">
     <div data-aos="fade-right" class="w-1/2 px-14">
         <img src="{{ asset('img/peopleworking.png') }}" />
     </div>
@@ -212,48 +212,48 @@
         <div class="flex space-x-6 pt-9">
             <div id="levo" class="flex flex-col space-y-7">
                 <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-gray-200 rounded-full">
-                        <i class="fa-solid fa-magnifying-glass p-3 text-gray-700"></i>
+                    <div class="w-[40px] h-[40px] flex items-center bg-[#5B52A31A] justify-center  rounded-full">
+                        <i class="fa-regular fa-lightbulb text-[20px] p-3 text-[#5B52A3]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практичен пристап</p>
-                    <p class="text-[12px] font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+                    <p class="text-[14px] font-semibold">Јасност пред комплексност</p>
+                    <p class="text-[12px] font-light">Секое решение мора да биде разбирливо, структурирано и применливо.</p>
                 </div>
                 <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-gray-200 rounded-full">
-                        <i class="fa-solid fa-magnifying-glass p-3 text-gray-700"></i>
+                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#7AB5A81A] rounded-full">
+                        <i class="fa-solid fa-screwdriver-wrench text-[20px] p-3 text-[#7AB5A8]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практичен пристап</p>
-                    <p class="text-[12px] font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+                    <p class="text-[14px] font-semibold">Практична вредност</p>
+                    <p class="text-[12px] font-light">Сè што развиваме мора да функционира во секојдневната работа.</p>
                 </div>
                 <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-gray-200 rounded-full">
-                        <i class="fa-solid fa-magnifying-glass p-3 text-gray-700"></i>
+                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#5B52A31A] rounded-full">
+                        <i class="fa-solid fa-puzzle-piece text-[20px] p-3 text-[#5B52A3]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практичен пристап</p>
-                    <p class="text-[12px] font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+                    <p class="text-[14px] font-semibold">Ко-креирање со клиентот </p>
+                    <p class="text-[12px] font-light">Најдобрите решенија ги создаваме во тесна соработка со клиентот.</p>
                 </div>
             </div>
             <div id="desno" class="flex flex-col space-y-7">
                 <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-gray-200 rounded-full">
-                        <i class="fa-solid fa-magnifying-glass p-3 text-gray-700"></i>
+                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#7AB5A81A] rounded-full">
+                        <i class="fa-solid fa-book-open text-[20px] p-3 text-[#7AB5A8]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практичен пристап</p>
-                    <p class="text-[12px] font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+                    <p class="text-[14px] font-semibold">Фокус на резултати</p>
+                    <p class="text-[12px] font-light">Не мериме активности – мериме влијание врз бизнисот и луѓето.</p>
                 </div>
                 <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-gray-200 rounded-full">
-                        <i class="fa-solid fa-magnifying-glass p-3 text-gray-700"></i>
+                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#5B52A31A] rounded-full">
+                        <i class="fa-regular fa-handshake text-[20px] p-3 text-[#5B52A3]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практичен пристап</p>
-                    <p class="text-[12px] font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+                    <p class="text-[14px] font-semibold">Доверба и интегритет</p>
+                    <p class="text-[12px] font-light">Работиме транспарентно, професионално и со целосна посветеност на клиентот.</p>
                 </div>
                 <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-gray-200 rounded-full">
-                        <i class="fa-solid fa-magnifying-glass p-3 text-gray-700"></i>
+                    <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#7AB5A81A] rounded-full">
+                        <i class="fa-solid fa-leaf text-[20px] p-3 text-[#7AB5A8]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практичен пристап</p>
-                    <p class="text-[12px] font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+                    <p class="text-[14px] font-semibold">Одржливост</p>
+                    <p class="text-[12px] font-light">Градиме системи што остануваат и функционираат и по завршување на соработката.</p>
                 </div>
             </div>        
         </div>
@@ -418,7 +418,7 @@
             <div class="flex-grow">
                 <div class="flex justify-between items-start mb-3">
                     <h3 class="text-xl font-bold text-gray-900" x-text="activeMember.name"></h3>
-                    <button @click="openTeamModal = false" class="text-gray-400 hover:text-gray-900 transition-colors">
+                    <button @click="openTeamModal = false" class="text-gray-400 hover:cursor-pointer hover:text-gray-900 transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>
@@ -463,7 +463,7 @@
                 <!-- Button -->
                 <button
                     @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center justify-between text-left">
+                    class="w-full px-10 py-6 flex items-center hover:cursor-pointer justify-between text-left">
 
                     <span class="text-[20px] font-bold text-black">
                         1. Кога е вистинско време да ангажираме HR консултант?
@@ -506,7 +506,7 @@
                 <!-- Button -->
                 <button
                     @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center justify-between text-left">
+                    class="w-full px-10 py-6 flex items-center  justify-between text-left">
 
                     <span class="text-[20px] font-bold text-black">
                         1. Кога е вистинско време да ангажираме HR консултант?
@@ -690,7 +690,7 @@
                     <div class="flex flex-col items-center">
                         <div
                             class="w-12 h-12 rounded-full bg-[#F1F5F9] text-[#5B52A3] flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            <svg class="w-5 h-5 hover:cursor-pointer" x="0 0 24 24"
                                 stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -704,7 +704,7 @@
                     <div class="flex flex-col items-center">
                         <div
                             class="w-12 h-12 rounded-full bg-[#F1F5F9] text-[#5B52A3] flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 hover:cursor-pointer" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
@@ -718,7 +718,7 @@
                     <div class="flex flex-col items-center">
                         <div
                             class="w-12 h-12 rounded-full bg-[#F1F5F9] text-[#5B52A3] flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            <svg class="w-5 h-5 hover:cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
