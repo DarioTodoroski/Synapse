@@ -3,21 +3,29 @@
 @section('content')
 
 <!-- 1 -->
-<div class="flex pt-14 font-sans px-6 font-light flex-col justify-center items-center">
-    <img src="{{ asset('img/elipse1.png') }}" class="absolute top-33 left-34 w-[271px] h-[271px]"/>
-    <img src="{{ asset('img/elipse2.png') }}" class="absolute bottom-33 right-38 w-[271px] h-[271px]"/>
-    <p data-aos="fade-left" class="text-[14px] text-[#00786F] bg-[#F0FDFA] px-5 py-2 border-[#CBFBF1] border-2 rounded-full">✦ Нудиме целосни, стратешки и практични HR решенија на едно место</p>
-    <div data-aos="fade-right" class="pt-5 flex flex-col -space-y-5 ">
-        <p class="text-[67px] text-center px-20 font-extrabold text-[#101828]">Им помагаме на</p>
-        <p class="text-[67px] text-center px-20 font-extrabold text-[#101828]">организациите да растат</p>
-        <p class="text-[67px] text-center px-20 font-extrabold bg-gradient-to-r from-[#5B52A3] to-[#7AB5A8] bg-clip-text text-transparent">преку луѓето </p>
+<div class="relative flex pt-14 font-sans px-4 sm:px-6 font-light flex-col justify-center items-center overflow-hidden md:overflow-visible">
+    
+    <img src="{{ asset('img/elipse1.png') }}" class="hidden md:block absolute top-33 left-34 w-[271px] h-[271px] -z-10"/>
+    <img src="{{ asset('img/elipse2.png') }}" class="hidden md:block absolute bottom-33 right-38 w-[271px] h-[271px] -z-10"/>
+    
+    <p data-aos="fade-left" class="text-[12px] md:text-[14px] text-center text-[#00786F] bg-[#F0FDFA] px-4 md:px-5 py-2 border-[#CBFBF1] border-2 rounded-full z-10">
+        ✦ Нудиме целосни, стратешки и практични HR решенија на едно место
+    </p>
+    
+    <div data-aos="fade-right" class="pt-6 md:pt-5 flex flex-col -space-y-1 sm:-space-y-2 md:-space-y-5 z-10 w-full">
+        <p class="text-4xl sm:text-5xl md:text-[67px] leading-tight md:leading-normal text-center px-2 md:px-20 font-extrabold text-[#101828]">Им помагаме на</p>
+        <p class="text-4xl sm:text-5xl md:text-[67px] leading-tight md:leading-normal text-center px-2 md:px-20 font-extrabold text-[#101828]">организациите да растат</p>
+        <p class="text-4xl sm:text-5xl md:text-[67px] leading-tight md:leading-normal text-center px-2 md:px-20 font-extrabold bg-gradient-to-r from-[#5B52A3] to-[#7AB5A8] bg-clip-text text-transparent pb-2 md:pb-0">преку луѓето</p>
     </div> 
-    <p data-aos="fade-left" class="pt-5 text-center text-[20px] text-[#4A5565]">Ги поддржуваме компаниите да изградат силни тимови, ефективно лидерство и <br/>HR процеси што носат долгорочни резултати.</p>
-    <div data-aos="fade-right" class="flex gap-5 pt-12">
-        <a class="bg-[#5B52A3] rounded-xl px-9 text-white py-2">Контактирајте нѐ →</a>
-        <a class="border-2 bg-white border-[#D1D5DC] rounded-xl px-4 py-2">Пребарајте услуги</a>
+    
+    <p data-aos="fade-left" class="pt-6 md:pt-5 text-center text-base md:text-[20px] text-[#4A5565] max-w-3xl z-10 leading-relaxed">
+        Ги поддржуваме компаниите да изградат силни тимови, ефективно лидерство и <br class="hidden md:block"/>HR процеси што носат долгорочни резултати.
+    </p>
+    
+    <div data-aos="fade-right" class="flex flex-col sm:flex-row gap-4 sm:gap-5 pt-8 md:pt-12 z-10 w-full sm:w-auto">
+        <a href="#" class="bg-[#5B52A3] text-center rounded-xl px-9 text-white py-3 md:py-2 transition-colors hover:bg-[#4a4386]">Контактирајте нѐ →</a>
+        <a href="#" class="border-2 text-center bg-white border-[#D1D5DC] rounded-xl px-4 py-3 md:py-2 text-[#101828] font-medium transition-colors hover:bg-gray-50">Пребарајте услуги</a>
     </div>
-
 
 </div>
 
@@ -164,134 +172,185 @@
 </section>
 
 <!-- 3 -->
-<div class="flex flex-col px-6 font-sans justify-center items-center pt-6">
-    <p data-aos="fade-up" class="font-light text-[16px] text-[#5B52A3]">ДОЗНАЈ ПОВЕЌЕ ЗА НАС</p>
-    <p data-aos="fade-up" class="text-[48px] font-bold ">Зошто SynapseHR?</p>
-    <div class="flex space-x-8 pt-7">
-        <div  class=" hover:scale-105 transition-all duration-500 ease-in-out w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
-            <div class="w-14 h-14 flex items-center justify-center border-2 border-[#E5E7EB] bg-[#eeedf6] rounded-full">
-                <i class="fa-solid fa-magnifying-glass text-[#5B52A3]"></i>
-            </div>            
-            <p class="text-[20px] pt-3 font-semibold">Практичен пристап</p>
-            <p class="text-[15px] pt-6 font-light">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
+<div class="flex flex-col px-4 sm:px-6 font-sans justify-center items-center pt-12 max-w-7xl mx-auto">
+    <p data-aos="fade-up" class="font-semibold text-sm md:text-[16px] text-[#5B52A3] tracking-wider uppercase mb-2">
+        ДОЗНАЈ ПОВЕЌЕ ЗА НАС
+    </p>
+    
+    <p data-aos="fade-up" class="text-3xl sm:text-4xl md:text-[48px] font-bold text-[#101828] text-center">
+        Зошто SynapseHR?
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-8 w-full items-stretch">
+        
+        <div class="hover:scale-105 transition-all duration-500 ease-in-out w-full min-h-[260px] md:h-[300px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A833] bg-white py-8 px-6 md:py-[43px] md:px-[36px] rounded-2xl">
+            <div>
+                <div class="w-14 h-14 flex items-center justify-center border-2 border-[#E5E7EB] bg-[#eeedf6] rounded-full">
+                    <i class="fa-solid fa-magnifying-glass text-[#5B52A3] text-lg"></i>
+                </div>            
+                <p class="text-xl pt-4 font-semibold text-[#101828]">Практичен пристап</p>
+            </div>
+            <p class="text-[15px] pt-4 font-light text-[#4A5565] leading-relaxed">Нудиме решенија што можат веднаш да се применат во секојдневното работење.</p>
         </div>
-        <div  class=" hover:scale-105 transition-all duration-500 ease-in-out w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
-            <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#f2f7f6] rounded-full">
-                <i class="fa-regular fa-lightbulb text-[#7AB5A8] text-[20px] "></i>
-            </div>            
-            <p class="text-[20px] pt-3 font-semibold">Искуство и експертиза</p>
-            <p class="text-[15px] pt-6 font-light">Нашиот тим комбинира HR знаење, бизнис разбирање и практично искуство од различни индустрии.</p>
+
+        <div class="hover:scale-105 transition-all duration-500 ease-in-out w-full min-h-[260px] md:h-[300px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A833] bg-white py-8 px-6 md:py-[43px] md:px-[36px] rounded-2xl">
+            <div>
+                <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#f2f7f6] rounded-full">
+                    <i class="fa-regular fa-lightbulb text-[#7AB5A8] text-xl"></i>
+                </div>            
+                <p class="text-xl pt-4 font-semibold text-[#101828]">Искуство и експертиза</p>
+            </div>
+            <p class="text-[15px] pt-4 font-light text-[#4A5565] leading-relaxed">Нашиот тим комбинира HR знаење, бизнис разбирање и практично искуство од различни индустрии.</p>
         </div>
-        <div  class=" hover:scale-105 transition-all duration-500 ease-in-out w-[350.328125px] h-[300px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white py-[43px] px-[36px] rounded-2xl">
-            <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#eeedf6] rounded-full">
-                <i class="fa-solid fa-wrench text-[20px] text-[#5B52A3]"></i>
-            </div>            
-            <p class="text-[20px] pt-3 font-semibold">Прилагодени решенија</p>
-            <p class="text-[15px] pt-6 font-light">Секоја организација е различна, затоа креираме пристап според вашите цели и потреби.</p>
+
+        <div class="hover:scale-105 transition-all duration-500 ease-in-out w-full min-h-[260px] md:h-[300px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A833] bg-white py-8 px-6 md:py-[43px] md:px-[36px] rounded-2xl">
+            <div>
+                <div class="w-14 h-14 flex items-center border-2 border-[#E5E7EB] justify-center bg-[#eeedf6] rounded-full">
+                    <i class="fa-solid fa-wrench text-lg text-[#5B52A3]"></i>
+                </div>            
+                <p class="text-xl pt-4 font-semibold text-[#101828]">Прилагодени решенија</p>
+            </div>
+            <p class="text-[15px] pt-4 font-light text-[#4A5565] leading-relaxed">Секоја организација е различна, затоа креираме пристап според вашите цели и потреби.</p>
         </div>
+        
     </div>
 </div>
-<div data-aos="fade-up" class="px-12 px-6 pt-14">
-    <div class="px-12 py-11 bg-gradient-to-r font-sans font-light from-[#5B52A3] to-[#7AB5A8] text-white p-6 rounded-3xl flex flex-col gap-2">
-        <div class="absolute right-35  w-[64px] h-[64px]  flex items-center justify-center bg-[#FFFFFF33] rounded-full">
-            <i class="fa-solid fa-user-group text-[22px]"></i>        
+
+<div data-aos="fade-up" class="px-4 sm:px-6 md:px-12 pt-14 max-w-7xl mx-auto w-full">
+    <div class="relative px-6 py-8 md:px-12 md:py-11 bg-gradient-to-r font-sans font-light from-[#5B52A3] to-[#7AB5A8] text-white rounded-3xl flex flex-col gap-3 overflow-hidden">
+        
+        <div class="absolute right-4 top-4 md:right-12 md:top-1/2 md:-translate-y-1/2 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-white/20 rounded-full backdrop-blur-sm">
+            <i class="fa-solid fa-user-group text-lg md:text-[22px]"></i>        
         </div>  
-        <p class="text-[30px]">Компании од различни индустрии нѝ веруваат</p>
-        <p class="text-[16px] w-[90%]">кога треба да изградат јасна структура, функционални процеси и организациска култура што поддржува стабилен и одржлив раст, без разлика дали се работи за конкретен предизвик или поширока трансформација, ние ја избираме и вклучуваме најсоодветната експертиза од нашиот тим и мрежа на партнери.</p>
+        
+        <p class="text-xl md:text-[30px] font-medium leading-tight max-w-[85%] md:max-w-[75%]">
+            Компании од различни индустрии нѝ веруваат
+        </p>
+        <p class="text-sm md:text-[16px] w-full md:w-[85%] leading-relaxed text-white/90">
+            кога треба да изградат јасна структура, функционални процеси и организациска култура што поддржува стабилен и одржлив раст. Без разлика дали се работи за конкретен предизвик или поширока трансформација, ние ја избираме и вклучуваме најсоодветната експертиза од нашиот тим и мрежа на партнери.
+        </p>
     </div>
 </div>
 
 <!-- 4 -->
-<div class="flex px-6 font-sans items-center pt-22 pb-24">
-    <div data-aos="fade-right" class="w-1/2 px-14">
-        <img src="{{ asset('img/peopleworking.png') }}" />
+<div class="flex flex-col-reverse lg:flex-row px-4 sm:px-6 font-sans items-center pt-12 pb-16 lg:pt-22 lg:pb-24 max-w-7xl mx-auto gap-12 lg:gap-0">
+    
+    <div data-aos="fade-right" class="w-full lg:w-1/2 px-4 lg:px-14 flex justify-center">
+        <img src="{{ asset('img/peopleworking.png') }}" class="max-w-full h-auto" alt="People working" />
     </div>
-    <div data-aos="fade-left" class="flex flex-col">
-        <p class="text-[14px] text-[#5B52A3]">КАКО РАБОТИМЕ?</p>
-        <p class="font-bold text-[36px] pt-2">Принципи на работа </p>
-        <div class="flex space-x-6 pt-9">
-            <div id="levo" class="flex flex-col space-y-7">
-                <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
-                    <div class="w-[40px] h-[40px] flex items-center bg-[#5B52A31A] justify-center  rounded-full">
-                        <i class="fa-regular fa-lightbulb text-[20px] p-3 text-[#5B52A3]"></i>
+    
+    <div data-aos="fade-left" class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <p class="text-[14px] font-semibold text-[#5B52A3] tracking-wider">КАКО РАБОТИМЕ?</p>
+        <p class="font-bold text-3xl sm:text-4xl lg:text-[36px] pt-2 text-[#101828]">Принципи на работа</p>
+        
+        <div class="flex flex-col sm:flex-row gap-6 pt-9 w-full justify-center lg:justify-start">
+            
+            <div id="levo" class="flex flex-col gap-6 w-full sm:w-auto">
+                
+                <div class="w-full sm:w-[285px] min-h-[175px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A840] bg-white px-6 py-5 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-1">
+                    <div class="w-[40px] h-[40px] flex items-center bg-[#5B52A31A] justify-center rounded-full">
+                        <i class="fa-regular fa-lightbulb text-[20px] text-[#5B52A3]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Јасност пред комплексност</p>
-                    <p class="text-[12px] font-light">Секое решение мора да биде разбирливо, структурирано и применливо.</p>
+                    <p class="text-[14px] font-semibold text-[#101828] pt-3">Јасност пред комплексност</p>
+                    <p class="text-[12px] font-light text-[#4A5565] pt-1">Секое решение мора да биде разбирливо, структурирано и применливо.</p>
                 </div>
-                <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
+                
+                <div class="w-full sm:w-[285px] min-h-[175px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A840] bg-white px-6 py-5 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-1">
                     <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#7AB5A81A] rounded-full">
-                        <i class="fa-solid fa-screwdriver-wrench text-[20px] p-3 text-[#7AB5A8]"></i>
+                        <i class="fa-solid fa-screwdriver-wrench text-[18px] text-[#7AB5A8]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Практична вредност</p>
-                    <p class="text-[12px] font-light">Сè што развиваме мора да функционира во секојдневната работа.</p>
+                    <p class="text-[14px] font-semibold text-[#101828] pt-3">Практична вредност</p>
+                    <p class="text-[12px] font-light text-[#4A5565] pt-1">Сè што развиваме мора да функционира во секојдневната работа.</p>
                 </div>
-                <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
+                
+                <div class="w-full sm:w-[285px] min-h-[175px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A840] bg-white px-6 py-5 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-1">
                     <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#5B52A31A] rounded-full">
-                        <i class="fa-solid fa-puzzle-piece text-[20px] p-3 text-[#5B52A3]"></i>
+                        <i class="fa-solid fa-puzzle-piece text-[18px] text-[#5B52A3]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Ко-креирање со клиентот </p>
-                    <p class="text-[12px] font-light">Најдобрите решенија ги создаваме во тесна соработка со клиентот.</p>
+                    <p class="text-[14px] font-semibold text-[#101828] pt-3">Ко-креирање со клиентот</p>
+                    <p class="text-[12px] font-light text-[#4A5565] pt-1">Најдобрите решенија ги создаваме во тесна соработка со клиентот.</p>
                 </div>
             </div>
-            <div id="desno" class="flex flex-col space-y-7">
-                <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
+            
+            <div id="desno" class="flex flex-col gap-6 w-full sm:w-auto">
+                
+                <div class="w-full sm:w-[285px] min-h-[175px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A840] bg-white px-6 py-5 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-1">
                     <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#7AB5A81A] rounded-full">
-                        <i class="fa-solid fa-book-open text-[20px] p-3 text-[#7AB5A8]"></i>
+                        <i class="fa-solid fa-book-open text-[18px] text-[#7AB5A8]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Фокус на резултати</p>
-                    <p class="text-[12px] font-light">Не мериме активности – мериме влијание врз бизнисот и луѓето.</p>
+                    <p class="text-[14px] font-semibold text-[#101828] pt-3">Фокус на резултати</p>
+                    <p class="text-[12px] font-light text-[#4A5565] pt-1">Не мериме активности – мериме влијание врз бизнисот и луѓето.</p>
                 </div>
-                <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
+                
+                <div class="w-full sm:w-[285px] min-h-[175px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A840] bg-white px-6 py-5 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-1">
                     <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#5B52A31A] rounded-full">
-                        <i class="fa-regular fa-handshake text-[20px] p-3 text-[#5B52A3]"></i>
+                        <i class="fa-regular fa-handshake text-[18px] text-[#5B52A3]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Доверба и интегритет</p>
-                    <p class="text-[12px] font-light">Работиме транспарентно, професионално и со целосна посветеност на клиентот.</p>
+                    <p class="text-[14px] font-semibold text-[#101828] pt-3">Доверба и интегритет</p>
+                    <p class="text-[12px] font-light text-[#4A5565] pt-1">Работиме транспарентно, професионално и со целосна посветеност на клиентот.</p>
                 </div>
-                <div class="w-[285px] h-[175px] flex flex-col  justify-between shadow-[0_8px_16px_#7AB5A866] bg-white px-6 py-5 rounded-2xl">
+                
+                <div class="w-full sm:w-[285px] min-h-[175px] flex flex-col justify-between shadow-[0_8px_16px_#7AB5A840] bg-white px-6 py-5 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-1">
                     <div class="w-[40px] h-[40px] flex items-center justify-center bg-[#7AB5A81A] rounded-full">
-                        <i class="fa-solid fa-leaf text-[20px] p-3 text-[#7AB5A8]"></i>
+                        <i class="fa-solid fa-leaf text-[18px] text-[#7AB5A8]"></i>
                     </div>            
-                    <p class="text-[14px] font-semibold">Одржливост</p>
-                    <p class="text-[12px] font-light">Градиме системи што остануваат и функционираат и по завршување на соработката.</p>
+                    <p class="text-[14px] font-semibold text-[#101828] pt-3">Одржливост</p>
+                    <p class="text-[12px] font-light text-[#4A5565] pt-1">Градиме системи што остануваат и функционираат и по завршување на соработката.</p>
                 </div>
             </div>        
         </div>
     </div>
 </div>
-
 <!-- 5 -->
-<div data-aos="fade-up" class="py-12 font-sans flex  bg-cover bg-center" style="background-image: url('{{ asset('img/bg.png') }}')">
-    <div id="levo" class="w-1/2  pl-36 py-11 flex flex-col justify-center">
-        <p class="bg-[#FFFFFF1A] text-white font-light text-[14px] border-[#FFFFFF33] border-2 rounded-full w-[220px] px-3 py-2 text-center">🎓 Континуирано учење</p>
-        <div class="text-[48px] pt-4 text-white font-bold flex flex-col -space-y-4">
+<div data-aos="fade-up" class="py-12 lg:py-20 font-sans flex flex-col lg:flex-row bg-cover bg-center gap-12 lg:gap-0" style="background-image: url('{{ asset('img/bg.png') }}')">
+    
+    <div id="levo" class="w-full lg:w-1/2 px-6 sm:px-12 lg:pl-36 lg:pr-8 flex flex-col justify-center">
+        <p class="bg-[#FFFFFF1A] text-white font-light text-[14px] border-[#FFFFFF33] border-2 rounded-full w-[220px] px-3 py-2 text-center">
+            🎓 Континуирано учење
+        </p>
+        
+        <div class="text-4xl sm:text-5xl lg:text-[48px] pt-5 text-white font-bold flex flex-col -space-y-1 sm:-space-y-2 lg:-space-y-4">
             <p>Школа за</p>
             <p>менаџирање</p>
             <p>со луѓе</p>
         </div>
-        <p class="text-[18px] text-[#FFFFFFE5] font-light pt-7">Практична програма за развој на менаџери, лидери и HR професионалци преку современи алатки, реални сценарија и применливо знаење.</p>
-        <div class="flex text-[#FFFFFFF2] font-light items-center space-x-2 pt-8">
-            <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px]"/>
-            <p>Практична и интерактивна програма</p>
+        
+        <p class="text-base sm:text-[18px] text-[#FFFFFFE5] font-light pt-6 leading-relaxed max-w-xl">
+            Практична програма за развој на менаџери, лидери и HR професионалци преку современи алатки, реални сценарија и применливо знаење.
+        </p>
+        
+        <div class="flex flex-col gap-3 pt-6 text-[#FFFFFFF2] font-light text-sm sm:text-base">
+            <div class="flex items-center space-x-3">
+                <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px] shrink-0" alt="Check icon"/>
+                <p>Практична и интерактивна програма</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px] shrink-0" alt="Check icon"/>
+                <p>Практична и интерактивна програма</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px] shrink-0" alt="Check icon"/>
+                <p>Практична и интерактивна програма</p>
+            </div>
+            <div class="flex items-center space-x-3 font-normal">
+                <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px] shrink-0" alt="Check icon"/>
+                <p>Практична и интерактивна програма</p>
+            </div>
         </div>
-        <div class="flex text-[#FFFFFFF2] font-light items-center space-x-2 pt-3">
-            <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px]"/>
-            <p>Практична и интерактивна програма</p>
-        </div>
-        <div class="flex text-[#FFFFFFF2] font-light items-center space-x-2 pt-3">
-            <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px]"/>
-            <p>Практична и интерактивна програма</p>
-        </div>
-        <div class="flex text-[#FFFFFFF2] items-center space-x-2 pt-3">
-            <img src="{{ asset('img/check.png') }}" class="w-[22px] h-[22px]"/>
-            <p>Практична и интерактивна програма</p>
-        </div>
-        <a class="bg-[#7AB5A8] text-white mt-10 w-[245px] text-center rounded-xl px-6 py-4 " href="/academy">Разгледај ја академијата</a>
+        
+        <a class="bg-[#7AB5A8] text-white mt-8 w-full sm:w-[245px] text-center rounded-xl px-6 py-4 font-medium transition-colors hover:bg-[#699e92]" href="/academy">
+            Разгледај ја академијата
+        </a>
     </div>
-    <div id="desno" class="w-1/2 pl-7 flex flex-col gap-10 justify-center">
-        <p class="bg-[#FFFFFF1A] border-2 border-[#FFFFFF33] p-8 w-[552px] font-semibold leading-8 text-[#FFFFFFB2] rounded-2xl">Програмите се дизајнирани за практична примена и долгорочен развој на организациите и тимовите.</p>
-        <img class="w-[552px] h-[406px] rounded-2xl" src="{{ asset('img/tablesit.jpg') }}" />
+    
+    <div id="desno" class="w-full lg:w-1/2 px-6 sm:px-12 lg:pl-7 lg:pr-36 flex flex-col gap-6 sm:gap-8 justify-center items-center lg:items-start">
+        <p class="bg-[#FFFFFF1A] border-2 border-[#FFFFFF33] p-6 sm:p-8 w-full max-w-[552px] font-semibold text-sm sm:text-base leading-relaxed sm:leading-8 text-[#FFFFFFB2] rounded-2xl">
+            Програмите се дизајнирани за практична примена и долгорочен развој на организациите и тимовите.
+        </p>
+        
+        <img class="w-full max-w-[552px] h-auto md:h-[406px] object-cover rounded-2xl shadow-lg" src="{{ asset('img/tablesit.jpg') }}" alt="Academy training Session" />
     </div>
+
 </div>
 
 <!-- 6 -->
@@ -439,246 +498,160 @@
 </section>
 
 <!-- 7 -->
- <section class="py-24 bg-[#F5F7F7] font-sans">
-    <div class="max-w-6xl mx-auto px-6">
+<section class="py-12 md:py-24 bg-[#F5F7F7] font-sans">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <!-- Heading -->
-        <div data-aos="fade-up" class="text-center mb-14">
-            <h2 class="text-[40px] font-bold text-[#0D1730]">
+        <div data-aos="fade-up" class="text-center mb-10 md:mb-14">
+            <h2 class="text-3xl md:text-[40px] font-bold text-[#0D1730] leading-tight">
                 Често поставувани прашања
             </h2>
-
-            <p class="mt-2 text-[#4A5565] text-[20px] font-light">
+            <p class="mt-2 text-[#4A5565] text-base md:text-[20px] font-light">
                 Имаме одговор на вашите најчести прашања
             </p>
         </div>
 
-        <!-- FAQ -->
-        <div class="space-y-6 flex flex-col items-center">
+        <div class="space-y-4 md:space-y-6 flex flex-col items-center w-full">
 
-            <!-- Item -->
             <div data-aos="fade-right" x-data="{ open: true }"
-                 class="bg-white w-[830px] rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden">
-
-                <!-- Button -->
-                <button
-                    @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center hover:cursor-pointer justify-between text-left">
-
-                    <span class="text-[20px] font-bold text-black">
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
                         1. Кога е вистинско време да ангажираме HR консултант?
                     </span>
-
-                    <!-- Icon -->
-                    <div
-                        class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center">
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6 text-white transition duration-300"
-                             :class="open ? 'rotate-180' : ''"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor"
-                             stroke-width="3">
-
-                            <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19 9l-7 7-7-7" />
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </button>
-
-                <!-- Content -->
-                <div x-show="open"
-                     x-transition
-                     class="px-10 pb-8">
-
-                    <p class="text-[18px] leading-[25px] font-light text-black max-w-[950px]">
-                        Кога чувствувате дека организацијата расте побрзо од структурата,
-                        кога има нејасни улоги, пад на перформанси или пред трансформации.
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Кога чувствувате дека организацијата расте побрзо од структурата, кога има нејасни улоги, пад на перформанси или пред трансформации.
                     </p>
                 </div>
             </div>
-                        <!-- Item -->
+
             <div data-aos="fade-left" x-data="{ open: false }"
-                 class="bg-white w-[830px] rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden">
-
-                <!-- Button -->
-                <button
-                    @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center  justify-between text-left">
-
-                    <span class="text-[20px] font-bold text-black">
-                        1. Кога е вистинско време да ангажираме HR консултант?
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
+                        2. Дали ни треба HR консултант ако веќе имаме HR тим?
                     </span>
-
-                    <!-- Icon -->
-                    <div
-                        class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center">
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6 text-white transition duration-300"
-                             :class="open ? 'rotate-180' : ''"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor"
-                             stroke-width="3">
-
-                            <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19 9l-7 7-7-7" />
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </button>
-
-                <!-- Content -->
-                <div x-show="open"
-                     x-transition
-                     class="px-10 pb-8">
-
-                    <p class="text-[18px] leading-[25px] font-light text-black max-w-[950px]">
-                        Кога чувствувате дека организацијата расте побрзо од структурата,
-                        кога има нејасни улоги, пад на перформанси или пред трансформации.
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Да – најчесто работиме како поддршка на постоечки HR тимови. Носиме надворешна перспектива и дополнителна експертиза.
                     </p>
                 </div>
             </div>
-            <!-- Item -->
+
             <div data-aos="fade-right" x-data="{ open: false }"
-                 class="bg-white w-[830px] rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden">
-
-                <!-- Button -->
-                <button
-                    @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center justify-between text-left">
-
-                    <span class="text-[20px] font-bold text-black">
-                        1. Кога е вистинско време да ангажираме HR консултант?
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
+                        3. Колку време трае една HR интервенција?
                     </span>
-
-                    <!-- Icon -->
-                    <div
-                        class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center">
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6 text-white transition duration-300"
-                             :class="open ? 'rotate-180' : ''"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor"
-                             stroke-width="3">
-
-                            <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19 9l-7 7-7-7" />
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </button>
-
-                <!-- Content -->
-                <div x-show="open"
-                     x-transition
-                     class="px-10 pb-8">
-
-                    <p class="text-[18px] leading-[25px] font-light text-black max-w-[950px]">
-                        Кога чувствувате дека организацијата расте побрзо од структурата,
-                        кога има нејасни улоги, пад на перформанси или пред трансформации.
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Зависи од обемот – од неколку недели (за специфични решенија) до неколку месеци (за системски промени).
                     </p>
                 </div>
             </div>
-            <!-- Item -->
+
             <div data-aos="fade-left" x-data="{ open: false }"
-                 class="bg-white w-[830px] rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden">
-
-                <!-- Button -->
-                <button
-                    @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center justify-between text-left">
-
-                    <span class="text-[20px] font-bold text-black">
-                        1. Кога е вистинско време да ангажираме HR консултант?
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
+                        4. Дали работите со мали компании или само со големи системи?
                     </span>
-
-                    <!-- Icon -->
-                    <div
-                        class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center">
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6 text-white transition duration-300"
-                             :class="open ? 'rotate-180' : ''"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor"
-                             stroke-width="3">
-
-                            <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19 9l-7 7-7-7" />
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </button>
-
-                <!-- Content -->
-                <div x-show="open"
-                     x-transition
-                     class="px-10 pb-8">
-
-                    <p class="text-[18px] leading-[25px] font-light text-black max-w-[950px]">
-                        Кога чувствувате дека организацијата расте побрзо од структурата,
-                        кога има нејасни улоги, пад на перформанси или пред трансформации.
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Работиме со компании од различна големина – од растечки бизниси до комплексни организации.
                     </p>
                 </div>
             </div>
-            <!-- Item -->
+
             <div data-aos="fade-right" x-data="{ open: false }"
-                 class="bg-white w-[830px] rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden">
-
-                <!-- Button -->
-                <button
-                    @click="open = !open"
-                    class="w-full px-10 py-6 flex items-center justify-between text-left">
-
-                    <span class="text-[20px] font-bold text-black">
-                        1. Кога е вистинско време да ангажираме HR консултант?
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
+                        5. Дали нудите обуки за менаџери и тимови?
                     </span>
-
-                    <!-- Icon -->
-                    <div
-                        class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center">
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             class="w-6 h-6 text-white transition duration-300"
-                             :class="open ? 'rotate-180' : ''"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor"
-                             stroke-width="3">
-
-                            <path stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  d="M19 9l-7 7-7-7" />
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </button>
-
-                <!-- Content -->
-                <div x-show="open"
-                     x-transition
-                     class="px-10 pb-8">
-
-                    <p class="text-[18px] leading-[25px] font-light text-black max-w-[950px]">
-                        Кога чувствувате дека организацијата расте побрзо од структурата,
-                        кога има нејасни улоги, пад на перформанси или пред трансформации.
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Да – обуките се практични, интерактивни и директно поврзани со реалните предизвици во организацијата.
                     </p>
                 </div>
             </div>
+
+            <div data-aos="fade-left" x-data="{ open: false }"
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
+                        6. Дали помагате при организациски промени или трансформации?
+                    </span>
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </button>
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Да – поддржуваме компании во редизајн на структура, улоги, процеси и култура за да се овозможи успешна трансформација.
+                    </p>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" x-data="{ open: false }"
+                 class="bg-white w-full max-w-[830px] rounded-[24px] md:rounded-[30px] shadow-[0_6px_18px_#0000001A] border border-[#E9EEEE] overflow-hidden transition-all duration-300">
+                <button @click="open = !open" class="w-full px-5 py-5 md:px-10 md:py-6 flex items-center hover:cursor-pointer justify-between text-left gap-4">
+                    <span class="text-base md:text-[20px] font-bold text-[#0D1730] leading-snug">
+                        7. Ќе треба ли многу ангажман од наша страна?
+                    </span>
+                    <div class="w-[30px] h-[30px] rounded-full bg-gradient-to-b from-[#7567D8] to-[#7FC8B8] flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white transition duration-300" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </button>
+                <div x-show="open" x-transition class="px-5 pb-6 md:px-10 md:pb-8">
+                    <p class="text-sm md:text-[18px] leading-relaxed font-light text-[#4A5565]">
+                        Ќе треба вклученост – но насочена и ефективна. Ние ја водиме структурата и процесот, а од вас ни требаат клучни информации и одлуки.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- AlpineJS -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
- <section data-aos="fade-right" class=" py-12 px-4">
+  <section data-aos="fade-up" class=" py-12 px-4">
             <div class="max-w-6xl mx-auto bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
 
                 <div class="absolute top-0 left-0 right-0 h-2.5 pointer-events-none"
@@ -690,7 +663,7 @@
                     <div class="flex flex-col items-center">
                         <div
                             class="w-12 h-12 rounded-full bg-[#F1F5F9] text-[#5B52A3] flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5 hover:cursor-pointer" x="0 0 24 24"
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -704,7 +677,7 @@
                     <div class="flex flex-col items-center">
                         <div
                             class="w-12 h-12 rounded-full bg-[#F1F5F9] text-[#5B52A3] flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5 hover:cursor-pointer" fill="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
@@ -718,7 +691,7 @@
                     <div class="flex flex-col items-center">
                         <div
                             class="w-12 h-12 rounded-full bg-[#F1F5F9] text-[#5B52A3] flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5 hover:cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -735,13 +708,13 @@
         </section>
 
 <!-- form -->
-<div data-aos="fade-left" class="min-h-screen flex items-center justify-center h-[470px]   bg-[#f5f5f5] font-sans py-16 px-6">
-    <div class="max-w-[1600px] mx-auto bg-white rounded-[35px] p-10 shadow-[0_3px_12px_#7AB5A866]">
+<div data-aos="fade-left" class="min-h-screen flex items-center justify-center bg-[#f5f5f5] font-sans py-12 px-4 sm:px-6">
+    <div class="w-full max-w-[1132px] mx-auto bg-white rounded-[24px] md:rounded-[35px] p-6 sm:p-10 shadow-[0_3px_12px_#7AB5A866]">
 
-        <form action="{{ route('questions.store') }}" method="POST">
+        <form action="{{ route('questions.store') }}" method="POST" class="w-full">
             @csrf
 
-            <h2 class="text-[20px] font-semibold text-[#1f1f1f] mb-8">
+            <h2 class="text-xl md:text-[20px] font-semibold text-[#1f1f1f] mb-6 md:mb-8 text-center sm:text-left">
                 Форма за контакт
             </h2>
 
@@ -751,7 +724,7 @@
                     name="full_name"
                     placeholder="Име и презиме"
                     required
-                    class="w-[1052px] h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
+                    class="w-full h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-5 sm:px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
                 >
             </div>
 
@@ -760,7 +733,7 @@
                     type="text"
                     name="company"
                     placeholder="Компанија"
-                    class="w-[1052px] h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
+                    class="w-full h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-5 sm:px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
                 >
             </div>
 
@@ -770,7 +743,7 @@
                     name="email"
                     placeholder="Емаил"
                     required
-                    class="w-[1052px] h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
+                    class="w-full h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-5 sm:px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
                 >
             </div>
 
@@ -779,28 +752,31 @@
                     type="text"
                     name="phone"
                     placeholder="Телефон"
-                    class="w-[1052px] h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
+                    class="w-full h-[46px] rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-5 sm:px-7 text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition"
                 >
             </div>
 
-            <div class="mb-5">
+            <div class="mb-6">
                 <textarea
                     name="question"
                     placeholder="Прашање"
                     required
-                    class="w-[1052px] h-[46px] px-7 py-2.5 rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] px-7  text-[14px] text-[#1A1A1A90] outline-none  focus:border-[#6757c8] focus:bg-white transition"
+                    rows="4"
+                    class="w-full min-h-[120px] py-3 px-5 sm:px-7 rounded-xl border-2 border-[#e5e5e5] bg-[#F9FAFB] text-[14px] text-[#1A1A1A90] outline-none focus:border-[#6757c8] focus:bg-white transition resize-y"
                 ></textarea>
             </div>
 
-            <button
-                type="submit"
-                class="w-[158px] h-[44px] rounded-[15px] bg-[#5B52A3] hover:bg-[#4d42a7] transition text-white text-[14px] font-light"
-            >
-                Испрати
-            </button>
+            <div class="flex justify-center sm:justify-start">
+                <button
+                    type="submit"
+                    class="w-full sm:w-[158px] h-[44px] rounded-[15px] bg-[#5B52A3] hover:bg-[#4d42a7] transition text-white text-[14px] font-light shadow-sm cursor-pointer"
+                >
+                    Испрати
+                </button>
+            </div>
 
             @if(session('success'))
-                <p class="mt-5 text-green-900 text-xl">
+                <p class="mt-5 text-green-600 text-base md:text-xl font-medium text-center sm:text-left">
                     {{ session('success') }}
                 </p>
             @endif
