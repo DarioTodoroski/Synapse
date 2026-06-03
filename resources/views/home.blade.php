@@ -36,7 +36,7 @@
         '01': {
             num: '01',
             title: 'Стратегиски HR',
-            desc: `Опфаќа: развој на стратегии за човечки ресурси, градење и менторство на HR тимови, организациски дизајн, систематизација на улоги и одговорности, поставување на HR политики и процеси, како и развој на HR KPI и People Analytics рамки.<br><br>
+            desc: `Опфаќа: развој на стратегии за човечки recursos, градење и менторство на HR тимови, организациски дизајн, систематизација на улоги и одговорности, поставување на HR политики и процеси, како и развој на HR KPI и People Analytics рамки.<br><br>
             Идеално за компании кои растат, се трансформираат или имаат потреба од јасна структура и насока во управувањето со луѓето.<br><br>
             Преку детална анализа на организацијата, дизајн на соодветни решенија и поставување практични системи и алатки во кои активно учествува менаџментот/HR тимот, добивате јасна организациска структура, прецизно дефинирани улоги и одговорности, усогласеност помеѓу стратегијата и секојдневното работење и стабилна основа за одржлив раст.<br><br>
             Поставете цврста основа за раст.`
@@ -85,44 +85,54 @@
             <p class="text-[#4A5565] font-light text-lg md:text-[20px] leading-relaxed">Ги поврзуваме бизнис целите со HR практиките за создавање усогласени, стабилни и успешни тимови.</p>
         </div>
 
-        <div @click="openModal('01')" data-aos="fade-up" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
-            <div>
-                <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Стратегиски HR и организациски развој</p>
-                <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Ги усогласуваме HR процесите со растот на компанијата преку современи стратегии, структури и системи.</p>
+        <div @click="openModal('01')" data-aos="fade-up" class="group cursor-pointer block h-full">
+            <div class="h-full bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 transition-all duration-300 ease-out origin-center group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:bg-[#5B52A3]">
+                <div>
+                    <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Стратегиски HR и организациски развој</p>
+                    <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Ги усогласуваме HR процесите со растот на компанијата преку современи стратегии, структури и системи.</p>
+                </div>
+                <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
             </div>
-            <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('02')" data-aos="fade-left" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#7AB5A8]">
-            <div>
-                <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Менаџирање со перформанси</p>
-                <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Поставување и каскадирање на цели, оценка на учинок, KPI и фидбек</p>
+        <div @click="openModal('02')" data-aos="fade-left" class="group cursor-pointer block h-full">
+            <div class="h-full bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 transition-all duration-300 ease-out origin-center group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:bg-[#7AB5A8]">
+                <div>
+                    <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Менаџирање со перформанси</p>
+                    <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Поставување и каскадирање на цели, оценка на учинок, KPI и фидбек</p>
+                </div>
+                <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
             </div>
-            <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('03')" data-aos="fade-right" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
-            <div>
-                <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Развој на вработени <br/>и кариера</p>
-                <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Развиваме лидери и тимови преку практични програми, обуки и алатки што создаваат реален импакт.</p>
+        <div @click="openModal('03')" data-aos="fade-right" class="group cursor-pointer block h-full">
+            <div class="h-full bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 transition-all duration-300 ease-out origin-center group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:bg-[#5B52A3]">
+                <div>
+                    <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Развој на вработени <br/>и кариера</p>
+                    <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Развиваме лидери и тимови преку практични програми, обуки и алатки што создаваат реален импакт.</p>
+                </div>
+                <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
             </div>
-            <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('04')" data-aos="fade-up" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#7AB5A8]">
-            <div>
-                <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Менторство и обуки</p>
-                <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Обуки за менаџери, HR академии, менторство, развој на лидерски и HR компетенции, градење професионални заедници</p>
+        <div @click="openModal('04')" data-aos="fade-up" class="group cursor-pointer block h-full">
+            <div class="h-full bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 transition-all duration-300 ease-out origin-center group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:bg-[#7AB5A8]">
+                <div>
+                    <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">Менторство и обуки</p>
+                    <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Обуки за менаџери, HR академии, менторство, развој на лидерски и HR компетенции, градење професионални заедници</p>
+                </div>
+                <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
             </div>
-            <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
-        <div @click="openModal('05')" data-aos="fade-left" class="group bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 cursor-pointer transition-all duration-300 ease-out origin-center hover:-rotate-2 hover:-translate-y-2 hover:shadow-2xl hover:bg-[#5B52A3]">
-            <div>
-                <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">HR решенија по мерка</p>
-                <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Преку анализа, заедничко дефинирање на приоритети и дизајн создаваме фокусирани и применливи решенија</p>
+        <div @click="openModal('05')" data-aos="fade-left" class="group cursor-pointer block h-full">
+            <div class="h-full bg-white p-8 rounded-3xl shadow-[0_6px_16px_#5B52A315] flex flex-col justify-between gap-4 transition-all duration-300 ease-out origin-center group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:bg-[#5B52A3]">
+                <div>
+                    <p class="text-[20px] font-semibold text-[#101828] mb-3 group-hover:text-white transition-colors duration-300">HR решенија по мерка</p>
+                    <p class="text-[15px] font-light text-[#4A5565] group-hover:text-white/90 transition-colors duration-300">Преку анализа, заедничко дефинирање на приоритети и дизајн создаваме фокусирани и применливи решенија</p>
+                </div>
+                <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
             </div>
-            <p class="text-[14px] font-semibold text-[#101828] mt-4 group-hover:text-white transition-colors duration-300">Прочитај повеќе →</p>
         </div>
 
     </div>
