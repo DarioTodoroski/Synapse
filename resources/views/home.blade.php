@@ -399,7 +399,7 @@
             </p>
 
             <div
-                class="text-4xl sm:text-5xl lg:text-[48px] pt-5 text-white font-bold flex flex-col -space-y-1 sm:-space-y-2 lg:-space-y-4">
+                class="text-4xl sm:text-5xl lg:text-[48px] pt-5 text-white font-bold flex flex-col -space-y-1 sm:-space-y-2 lg:space-y-2">
                 <p>Школа за</p>
                 <p>менаџирање</p>
                 <p>со луѓе</p>
