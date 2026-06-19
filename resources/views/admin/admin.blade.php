@@ -1,6 +1,17 @@
 @extends('layouts.admin')
 
 @section('content')
+<div class="max-w-7xl mx-auto mb-8 flex items-center justify-between">
+    <div>
+        <h1 class="text-2xl font-bold text-slate-900">Административна табла</h1>
+        <p class="text-sm text-slate-500">Управувајте со пријавите и содржините на платформата.</p>
+    </div>
+    
+    <a href="{{ route('admin.events.index') }}" 
+       class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition shadow-sm">
+    Менаџирање со Настани
+    </a>
+</div>
 <div class="min-h-screen bg-slate-50/60 px-4 py-10 mt-5 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto space-y-14">
 
