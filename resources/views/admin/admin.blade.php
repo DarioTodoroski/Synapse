@@ -1,5 +1,33 @@
 @extends('layouts.admin')
+@php
+    $rows = collect();
 
+    foreach ($contacts as $contact) {
+        $rows->push([
+            'type' => 'Брза пријава',
+            'full_name' => $contact->full_name,
+            'company' => $contact->company,
+            'email' => $contact->email,
+            'phone' => $contact->phone,
+            'participants' => '-',
+            'created_at' => $contact->created_at,
+        ]);
+    }
+
+    foreach ($applications as $application) {
+        $rows->push([
+            'type' => 'Академија',
+            'full_name' => $application->full_name,
+            'company' => $application->company,
+            'email' => $application->email,
+            'phone' => $application->phone,
+            'participants' => $application->participants ?? 1,
+            'created_at' => $application->created_at,
+        ]);
+    }
+
+    $rows = $rows->sortByDesc('created_at');
+@endphp
 @section('content')
 <div class="max-w-7xl mx-auto mb-8 flex items-center justify-between">
     <div>
@@ -16,118 +44,99 @@
     <div class="max-w-7xl mx-auto space-y-14">
 
         <div class="space-y-4">
-            <div class="flex items-center justify-between">
-                <div>
-                    <h2 class="text-xl font-semibold text-slate-900 tracking-tight">Брзи пријави</h2>
-                    <p class="text-xs text-slate-500 mt-0.5">Преглед на сите пристигнати пораки преку брзи пријави.</p>
-                </div>
-                <span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 border border-slate-200/60">{{ count($contacts) }} вкупно</span>
-            </div>
-
-            <div class="overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm ring-1 ring-purple-100 ring-opacity-5">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-slate-50/70 border-b border-slate-200/60 text-slate-500 text-xs font-semibold uppercase tracking-wider">
-                            <tr>
-                                <th scope="col" class="py-3.5 px-6">Име</th>
-                                <th scope="col" class="py-3.5 px-6">Компанија</th>
-                                <th scope="col" class="py-3.5 px-6">Е-пошта</th>
-                                <th scope="col" class="py-3.5 px-6">Телефон</th>
-                                <th scope="col" class="py-3.5 px-6">Датум</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-100">
-                            @foreach($contacts as $contact)
-                                <tr class="hover:bg-slate-50/80 transition-colors duration-150 ease-in-out">
-                                    <td class="py-4 px-6 whitespace-nowrap">
-                                        <div class="flex items-center gap-3">
-                                            <div class="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center font-medium text-slate-600 text-xs border border-slate-200/40">
-                                                {{ mb_substr($contact->full_name, 0, 1) }}
-                                            </div>
-                                            <span class="font-medium text-slate-900">{{ $contact->full_name }}</span>
-                                        </div>
-                                    </td>
-                                    <td class="py-4 px-6 text-slate-600 whitespace-nowrap">
-                                        @if($contact->company)
-                                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 border border-slate-200/30">{{ $contact->company }}</span>
-                                        @else
-                                            <span class="text-slate-400">-</span>
-                                        @endif
-                                    </td>
-                                    <td class="py-4 px-6 text-slate-600 whitespace-nowrap">{{ $contact->email }}</td>
-                                    <td class="py-4 px-6 text-slate-500 whitespace-nowrap">{{ $contact->phone ?? '-' }}</td>
-                                    <td class="py-4 px-6 text-slate-500 whitespace-nowrap text-xs">
-                                        <time class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-100/80 text-slate-600 font-medium border border-slate-200/30">
-                                            {{ $contact->created_at->format('d.m.Y H:i') }}
-                                        </time>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div class="flex items-center justify-between">
+        <div>
+            <h2 class="text-xl font-semibold text-slate-900 tracking-tight">
+                Сите пријави
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">
+                Брзи пријави и пријави за академија.
+            </p>
         </div>
 
-        <div class="space-y-4">
-            <div class="flex items-center justify-between">
-                <div>
-                    <h2 class="text-xl font-semibold text-slate-900 tracking-tight">Пријави за академија</h2>
-                    <p class="text-xs text-slate-500 mt-0.5">Листа на корисници кои поднеле пријава за учество во академијата.</p>
-                </div>
-                <span class="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 border border-indigo-100">{{ count($applications) }} вкупно</span>
-            </div>
+        <span class="inline-flex items-center rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 border border-slate-200/60">
+            {{ $rows->count() }} вкупно
+        </span>
+    </div>
 
-            <div class="overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm ring-1 ring-purple-100 ring-opacity-5">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-slate-50/70 border-b border-slate-200/60 text-slate-500 text-xs font-semibold uppercase tracking-wider">
-                            <tr>
-                                <th scope="col" class="py-3.5 px-6">Име</th>
-                                <th scope="col" class="py-3.5 px-6">Компанија</th>
-                                <th scope="col" class="py-3.5 px-6">Е-пошта</th>
-                                <th scope="col" class="py-3.5 px-6">Телефон</th>
-                                <th scope="col" class="py-3.5 px-6">Учесници</th>
-                                <th scope="col" class="py-3.5 px-6">Датум</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-100">
-                            @foreach($applications as $application)
-                                <tr class="hover:bg-slate-50/80 transition-colors duration-150 ease-in-out">
-                                    <td class="py-4 px-6 whitespace-nowrap">
-                                        <div class="flex items-center gap-3">
-                                            <div class="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center font-medium text-slate-600 text-xs border border-slate-200/40">
-                                                {{ mb_substr($application->full_name, 0, 1) }}
-                                            </div>
-                                            <span class="font-medium text-slate-900">{{ $application->full_name }}</span>
-                                        </div>
-                                    </td>
-                                    <td class="py-4 px-6 text-slate-600 whitespace-nowrap">
-                                        @if($application->company)
-                                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 border border-slate-200/30">{{ $application->company }}</span>
-                                        @else
-                                            <span class="text-slate-400">-</span>
-                                        @endif
-                                    </td>
-                                    <td class="py-4 px-6 text-slate-600 whitespace-nowrap">{{ $application->email }}</td>
-                                    <td class="py-4 px-6 text-slate-500 whitespace-nowrap">{{ $application->phone ?? '-' }}</td>
-                                    <td class="py-4 px-6 whitespace-nowrap">
-                                        <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold border border-indigo-100/50">
-                                            {{ $application->participants ?? '1' }}
-                                        </span>
-                                    </td>
-                                    <td class="py-4 px-6 text-slate-500 whitespace-nowrap text-xs">
-                                        <time class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-100/80 text-slate-600 font-medium border border-slate-200/30">
-                                            {{ $application->created_at->format('d.m.Y H:i') }}
-                                        </time>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div class="overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm ring-1 ring-purple-100 ring-opacity-5">
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+                <thead class="bg-slate-50/70 border-b border-slate-200/60 text-slate-500 text-xs font-semibold uppercase tracking-wider">
+                    <tr>
+                        <th class="py-3.5 px-6">Тип</th>
+                        <th class="py-3.5 px-6">Име</th>
+                        <th class="py-3.5 px-6">Компанија</th>
+                        <th class="py-3.5 px-6">Е-пошта</th>
+                        <th class="py-3.5 px-6">Телефон</th>
+                        <th class="py-3.5 px-6">Учесници</th>
+                        <th class="py-3.5 px-6">Датум</th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-slate-100">
+                    @foreach($rows as $row)
+                        <tr class="hover:bg-slate-50/80 transition-colors duration-150 ease-in-out">
+
+                            <td class="py-4 px-6">
+                                @if($row['type'] === 'Академија')
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-100">
+                                        Академија
+                                    </span>
+                                @else
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                                        Брза пријава
+                                    </span>
+                                @endif
+                            </td>
+
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                <div class="flex items-center gap-3">
+                                    <div class="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center font-medium text-slate-600 text-xs border border-slate-200/40">
+                                        {{ mb_substr($row['full_name'], 0, 1) }}
+                                    </div>
+                                    <span class="font-medium text-slate-900">
+                                        {{ $row['full_name'] }}
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td class="py-4 px-6 text-slate-600 whitespace-nowrap">
+                                @if($row['company'])
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-800 border border-slate-200/30">
+                                        {{ $row['company'] }}
+                                    </span>
+                                @else
+                                    <span class="text-slate-400">-</span>
+                                @endif
+                            </td>
+
+                            <td class="py-4 px-6 text-slate-600 whitespace-nowrap">
+                                {{ $row['email'] }}
+                            </td>
+
+                            <td class="py-4 px-6 text-slate-500 whitespace-nowrap">
+                                {{ $row['phone'] ?? '-' }}
+                            </td>
+
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                {{ $row['participants'] }}
+                            </td>
+
+                            <td class="py-4 px-6 text-slate-500 whitespace-nowrap text-xs">
+                                <time class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-100/80 text-slate-600 font-medium border border-slate-200/30">
+                                    {{ $row['created_at']->format('d.m.Y H:i') }}
+                                </time>
+                            </td>
+
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
+    </div>
+</div>
+
 
         <div class="space-y-4">
             <div class="flex items-center justify-between">

@@ -521,7 +521,7 @@
     </div>
 </section>
 
-        <section id="modules-section" class="bg-[#F8FAFC] py-16 px-4" x-data="{
+        <section id="modules-section" class="bg-[#F5F7F7] py-16 px-4" x-data="{
             openModal: false,
             activeNum: '',
             activeTitle: '',
@@ -960,12 +960,12 @@
                     <div>
                         <label class="block text-sm font-semibold text-[#475569] mb-1.5">Име и презиме</label>
                         <input name="full_name" type="text" placeholder="Jane Doe"
-                            class="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
+                            class="w-full bg-[#F5F7F7] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-[#475569] mb-1.5">Компанија</label>
                         <input name="company" type="text" placeholder="Acme Corp"
-                            class="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
+                            class="w-full bg-[#F5F7F7] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
                     </div>
                 </div>
 
@@ -973,19 +973,19 @@
                     <div>
                         <label class="block text-sm font-semibold text-[#475569] mb-1.5">Е-маил</label>
                         <input name="email" type="email" placeholder="jane@acme.com"
-                            class="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
+                            class="w-full bg-[#F5F7F7] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-[#475569] mb-1.5">Телефон</label>
                         <input name="phone" type="text" placeholder="+389 7X XXX XXX"
-                            class="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
+                            class="w-full bg-[#F5F7F7] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-sm font-semibold text-[#475569] mb-1.5">Број на пријавени учесници</label>
                     <input name="participants" type="number"
-                        class="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
+                        class="w-full bg-[#F5F7F7] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#5B52A3] transition-colors">
                 </div>
 
                 <button type="submit"
@@ -1149,4 +1149,7 @@
             </div>
         </section>
     </div>
+        <div class="justify-center flex bg-white mt-5 py-5 text-gray-400 font-light " >
+    © 2026 Synapse, Powered by Brainster
+</div>
 @endsection
