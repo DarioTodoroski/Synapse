@@ -458,28 +458,33 @@
                 name: 'Томида Караиванова Алаѓозовска',
                 role: 'Експерт за стратегиско управување со човечки ресурси и HR системи',
                 desc: 'Експерт за стратегиско управување со човечки ресурси и HR системи, со 20 години искуство во FMCG, производство, телекомуникации, хотелиерство, авио индустрија, градежништво. Работела како корпоративен HR директор на ниво на повеќе држави, со фокус на усогласување на бизнисот и луѓето преку јасни структури, процеси и одлуки. Томида е Стратешки HR консултант и основач на Evolvia.',
-                companyBtn: 'Evolvia &rarr;'
+                companyBtn: 'Evolvia &rarr;', 
+                linkedin: 'https://mk.linkedin.com/in/tomida-karaivanova-alagjozovska-62332a7'
+
             },
             '02': {
                 num: '02',
                 name: 'Ана Костовска',
                 role: 'Организациски психолог и експерт за развој на луѓе и системи',
                 desc: 'Организациски психолог со 17+ години искуство во различни индустрии и организациски контексти (телеком, малопродажба, производство). Работи на развој на луѓе и системи, поврзувајќи психологија и менаџмент пракса за создавање стабилни тимови и одржливи резултати. Ана е основач на CSD SONIK, им помага на луѓето и организациите да се развиваат со јасна цел и самодоверба.',
-                companyBtn: 'CSD SONIK &rarr;'
+                companyBtn: 'CSD SONIK &rarr;',
+                linkedin: 'https://mk.linkedin.com/in/ana-kostovska-b6341332'
             },
             '03': {
                 num: '03',
                 name: 'Ивана Дојчиновска Стојановиќ',
                 role: 'Експерт за организациски дизајн, HR системи и кариерен развој',
                 desc: 'Експерт за организациски дизајн, HR системи и кариерен развој, со над 20 години искуство во банкарство и производни системи. Работела на лидерски HR позиции во меѓународни компании, а денес поддржува организации и поединци во развој, трансформација и кариерен раст. Ивана е основач на Prudens Consulting, која со јасен и практичен пристап ги претвора комплексните предизвици во структурирани, одржливи решенија.',
-                companyBtn: 'Prudens Consulting &rarr;'
+                companyBtn: 'Prudens Consulting &rarr;',
+                linkedin: 'https://mk.linkedin.com/in/ivana-dojchinovska-stojanovikj'
             },
             '04': {
                 num: '04',
                 name: 'Искра Конеска',
                 role: 'HR лидер специјализирана во HRIS, перформанси и организациски развој',
                 desc: 'HR лидер со над 20 годишно искуство, специјализирана во HRIS, перформанси и организациски развој. Работела во IT, FMCG и автомобилска индустрија, активно поттикнува иновации и раст на современи HR професионалци. Искра со практичен и иновативен пристап гради системи што го поддржуваат развојот на луѓето, организациската култура и лидерството.',
-                companyBtn: ''
+                companyBtn: '',
+                linkedin: 'https://mk.linkedin.com/in/iskra-koneska-817031368'
             }
         },
         openMember(id) {
@@ -594,12 +599,14 @@
 
                     <p class="text-sm text-[#4A5565] mb-6 leading-relaxed" x-text="activeMember.desc"></p>
 
-                    <div class="flex flex-wrap gap-3 items-center">
-
-                        <a href="#"
-                            class="border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm py-2.5 px-6 rounded-lg transition-colors">Go
-                            to Linkedin</a>
-                    </div>
+<div class="flex flex-wrap gap-3 items-center">
+    <a :href="activeMember.linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm py-2.5 px-6 rounded-lg transition-colors">
+        Go to LinkedIn
+    </a>
+</div>
                 </div>
             </div>
         </div>
