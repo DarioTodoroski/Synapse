@@ -9,7 +9,7 @@
             'company' => $contact->company,
             'email' => $contact->email,
             'phone' => $contact->phone,
-            'participants' => '-',
+            'participants' => $contact->participants ?? '-',
             'created_at' => $contact->created_at,
         ]);
     }

@@ -522,7 +522,7 @@
 
                     <div data-aos="fade-right"
                         class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
-                        <img class="w-full h-auto object-cover" src="{{ asset('img/ana.png') }}" alt="Ана" />
+                        <img class="w-full h-auto object-cover" src="{{ asset('img/Ana.png') }}" alt="Ана" />
                         <div class="p-6 flex flex-col flex-grow">
                             <p class="text-lg font-semibold mb-2">Ана Костовска</p>
                             <p class="text-base text-[#5B52A3] font-light mb-6 flex-grow">Организациски психолог и експерт
@@ -535,7 +535,7 @@
 
                     <div data-aos="fade-left"
                         class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
-                        <img class="w-full h-auto object-cover" src="{{ asset('img/ivana.png') }}" alt="Ивана" />
+                        <img class="w-full h-auto object-cover" src="{{ asset('img/Ivana.png') }}" alt="Ивана" />
                         <div class="p-6 flex flex-col flex-grow">
                             <p class="text-lg font-semibold mb-2">Ивана Дојчиновска Стојановиќ</p>
                             <p class="text-base text-[#5B52A3] font-light mb-6 flex-grow">Експерт за организациски дизајн,
@@ -548,7 +548,7 @@
 
                     <div data-aos="fade-left"
                         class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
-                        <img class="w-full h-auto object-cover" src="{{ asset('img/iskra.png') }}" alt="Искра" />
+                        <img class="w-full h-auto object-cover" src="{{ asset('img/Iskra.png') }}" alt="Искра" />
                         <div class="p-6 flex flex-col flex-grow">
                             <p class="text-lg font-semibold mb-2">Искра Конеска</p>
                             <p class="text-base text-[#5B52A3] font-light mb-6 flex-grow">HR лидер специјализирана во HRIS,

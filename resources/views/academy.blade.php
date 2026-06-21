@@ -84,7 +84,7 @@
                             style="
                 width: calc(100% - 32px);
                 max-width: 340px;
-                height: 390px;
+                min-height: 450px;
                 padding: 24px 24px 20px;
              ">
 
@@ -92,26 +92,30 @@
                                 Брза пријава
                             </h3>
 
-                            <form method="POST" action="{{ route('academy.store') }}">
+                            <form method="POST" action="{{ route('academy.store') }}" class="space-y-4">
                                 @csrf
 
                                 <input type="text" name="full_name"
                                     class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]"
-                                    placeholder="Име и презиме"><br><br>
+                                    placeholder="Име и презиме">
 
                                 <input type="text" name="company"
                                     class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]"
-                                    placeholder="Компанија"><br><br>
+                                    placeholder="Компанија">
 
                                 <input type="email" name="email"
                                     class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]"
-                                    placeholder="Емаил"><br><br>
+                                    placeholder="Емаил">
 
                                 <input type="text" name="phone"
                                     class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]"
-                                    placeholder="Телефонски број"><br><br>
+                                    placeholder="Телефонски број">
 
-                                <button class="w-full bg-[#5B52A3] py-2.5 -mt-4 text-white font-light rounded-2xl"
+                                <input type="number" name="participants" min="1"
+                                    class="py-2 px-4 border-[1px] border-[#E5E7EB] w-full rounded-2xl bg-[#F9FAFB]"
+                                    placeholder="Број на пријавени учесници">
+
+                                <button class="w-full bg-[#5B52A3] py-2.5 text-white font-light rounded-2xl"
                                     type="submit">Испрати пријава</button>
                             </form>
 
@@ -124,7 +128,7 @@
 
         <!-- CARDS SECTION -->
         <!-- top padding accounts for the form card overflow (130px overlap + 32px gap) -->
-        <section class="max-w-7xl mx-auto px-6 lg:px-8 pt-52 lg:pt-12">
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 pt-64 lg:pt-12">
 
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
 
@@ -831,7 +835,7 @@
                 </div>
 
                 <div data-aos="fade-right" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
-                    <img class="w-full h-auto object-cover" src="{{ asset('img/ana.png') }}" alt="Ана" />
+                    <img class="w-full h-auto object-cover" src="{{ asset('img/Ana.png') }}" alt="Ана" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Ана Костовска</p>
                         <p class="text-base text-[#5B52A3] font-light mb-6 flex-grow">Организациски психолог и експерт за развој на луѓе и системи</p>
@@ -840,7 +844,7 @@
                 </div>
 
                 <div data-aos="fade-left" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
-                    <img class="w-full h-auto object-cover" src="{{ asset('img/ivana.png') }}" alt="Ивана" />
+                    <img class="w-full h-auto object-cover" src="{{ asset('img/Ivana.png') }}" alt="Ивана" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Ивана Дојчиновска Стојановиќ</p>
                         <p class="text-base text-[#5B52A3] font-light mb-6 flex-grow">Експерт за организациски дизајн, HR системи и кариерен развој</p>
@@ -849,7 +853,7 @@
                 </div>
 
                 <div data-aos="fade-left" class="bg-white rounded-2xl shadow-[0_6px_16px_#7AB5A866] flex flex-col overflow-hidden">
-                    <img class="w-full h-auto object-cover" src="{{ asset('img/iskra.png') }}" alt="Искра" />
+                    <img class="w-full h-auto object-cover" src="{{ asset('img/Iskra.png') }}" alt="Искра" />
                     <div class="p-6 flex flex-col flex-grow">
                         <p class="text-lg font-semibold mb-2">Искра Конеска</p>
                         <p class="text-base text-[#5B52A3] font-light mb-6 flex-grow">HR лидер специјализирана во HRIS, перформанси и организациски развој</p>
