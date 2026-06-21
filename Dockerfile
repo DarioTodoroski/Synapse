@@ -29,6 +29,7 @@ RUN npm run build
 FROM php:8.4-apache
 
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+ENV PORT=8080
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends default-mysql-client libzip-dev unzip \
@@ -51,7 +52,7 @@ RUN chmod +x /usr/local/bin/synapse-entrypoint \
     && mkdir -p storage/app/public storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
     && chown -R www-data:www-data storage bootstrap/cache
 
-EXPOSE 80
+EXPOSE 8080
 
 ENTRYPOINT ["synapse-entrypoint"]
 CMD ["apache2-foreground"]

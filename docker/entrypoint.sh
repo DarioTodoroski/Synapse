@@ -43,6 +43,11 @@ if [ "${RUN_MIGRATIONS:-true}" = "true" ]; then
 fi
 
 if [ "${1:-}" = "apache2-foreground" ]; then
+    app_port="${PORT:-8080}"
+
+    sed -ri "s/^Listen [0-9]+/Listen ${app_port}/" /etc/apache2/ports.conf
+    sed -ri "s/<VirtualHost \*:[0-9]+>/<VirtualHost *:${app_port}>/" /etc/apache2/sites-available/*.conf
+
     rm -f \
         /etc/apache2/mods-enabled/mpm_event.load \
         /etc/apache2/mods-enabled/mpm_event.conf \
