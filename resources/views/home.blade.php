@@ -1060,6 +1060,10 @@
 
         </div>
     </section>
+    <div class="justify-center flex bg-white mt-5 py-5 text-gray-400 font-light">
+        Â© 2026 Synapse, Powered by Brainster
+    </div>
+
     <div id="eventModal" class="fixed inset-0 z-50 hidden bg-gray-900 bg-opacity-50 overflow-y-auto h-full w-full" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
         

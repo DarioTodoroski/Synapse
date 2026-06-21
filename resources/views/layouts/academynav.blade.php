@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Synapse HR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,7 +18,7 @@
                 <img class="w-36 md:w-48" src="{{ asset('img/logo.png') }}" alt="Synapse HR">
             </div>
             
-            <div class="hidden md:flex items-center text-xs lg:text-sm xl:text-[16px] text-[#364153] gap-3 lg:gap-6 xl:gap-10 whitespace-nowrap">
+            <div class="hidden lg:flex items-center text-sm xl:text-[16px] text-[#364153] gap-6 xl:gap-10 whitespace-nowrap">
                 <a href="/" class="hover:text-[#5B52A3] transition-colors duration-200">Почетна</a>
                 <a href="#what-is-spm" class="hover:text-[#5B52A3] transition-colors duration-200 cursor-pointer">Што е SPM?</a>
                 <a href="#target-audience" class="hover:text-[#5B52A3] transition-colors duration-200 cursor-pointer">За кого е наменета?</a>
@@ -27,14 +28,14 @@
                 <a href="#contact-section" class="hover:text-[#5B52A3] transition-colors duration-200 cursor-pointer">Контакт</a>
             </div>
 
-            <div class="md:hidden flex items-center">
+            <div class="lg:hidden flex items-center">
                 <button id="mobile-menu-button" class="text-[#364153] focus:outline-none p-2 text-2xl transition-transform active:scale-95" aria-label="Toggle Menu">
                     <i id="menu-icon" class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full rounded-b-[25px] shadow-lg transition-all duration-300 ease-in-out">
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full rounded-b-[25px] shadow-lg transition-all duration-300 ease-in-out">
             <div class="flex flex-col px-6 py-6 gap-4 text-[16px] text-[#364153] font-normal">
                 <a href="/" class="py-2 border-b border-gray-50 hover:text-[#5B52A3]">Почетна</a>
                 <a href="#what-is-spm" class="py-2 border-b border-gray-50 hover:text-[#5B52A3] cursor-pointer">Што е SPM?</a>
