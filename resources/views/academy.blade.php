@@ -1164,6 +1164,6 @@
         </section>
     </div>
         <div class="justify-center flex bg-white mt-5 py-5 text-gray-400 font-light " >
-    © 2026 Synapse, Powered by Brainster 12345
+    © 2026 Synapse, Powered by Brainster
 </div>
 @endsection
