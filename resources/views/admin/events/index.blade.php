@@ -8,7 +8,10 @@
             <h3 class="text-lg font-bold text-slate-900">Управување со Настани</h3>
             <p class="text-sm text-slate-500">Преглед, измена и бришење на сите ваши објави и настани.</p>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-wrap items-center gap-3">
+            <a href="{{ url('/admin') }}" class="inline-flex items-center rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50">
+                &larr; Назад
+            </a>
             <span class="inline-flex items-center rounded bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
                 {{ $events->count() }} вкупно
             </span>
