@@ -29,6 +29,62 @@ use App\Models\Event;
 // Home / Events Grid Page 
 Route::get('/', [EventController::class, 'index'])->name('events.index');
 
+Route::get('/sitemap.xml', function () {
+    $configuredUrl = rtrim((string) config('app.url'), '/');
+    $baseUrl = $configuredUrl && ! str_contains($configuredUrl, 'localhost')
+        ? $configuredUrl
+        : 'https://synapsehr.mk';
+
+    $urls = [
+        [
+            'loc' => $baseUrl.'/',
+            'changefreq' => 'weekly',
+            'priority' => '1.0',
+        ],
+        [
+            'loc' => $baseUrl.'/academy',
+            'changefreq' => 'monthly',
+            'priority' => '0.8',
+        ],
+    ];
+
+    Event::query()
+        ->whereNotNull('slug')
+        ->where('slug', '!=', '')
+        ->orderBy('id')
+        ->get(['slug', 'updated_at'])
+        ->each(function (Event $event) use (&$urls, $baseUrl) {
+            $urls[] = [
+                'loc' => $baseUrl.'/events/'.rawurlencode($event->slug),
+                'lastmod' => optional($event->updated_at)->toDateString(),
+                'changefreq' => 'monthly',
+                'priority' => '0.7',
+            ];
+        });
+
+    $escape = fn ($value) => htmlspecialchars((string) $value, ENT_XML1 | ENT_QUOTES, 'UTF-8');
+
+    $xml = '<?xml version="1.0" encoding="UTF-8"?>'."\n";
+    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'."\n";
+
+    foreach ($urls as $url) {
+        $xml .= "    <url>\n";
+        $xml .= '        <loc>'.$escape($url['loc'])."</loc>\n";
+
+        if (! empty($url['lastmod'])) {
+            $xml .= '        <lastmod>'.$escape($url['lastmod'])."</lastmod>\n";
+        }
+
+        $xml .= '        <changefreq>'.$escape($url['changefreq'])."</changefreq>\n";
+        $xml .= '        <priority>'.$escape($url['priority'])."</priority>\n";
+        $xml .= "    </url>\n";
+    }
+
+    $xml .= '</urlset>'."\n";
+
+    return response($xml, 200)->header('Content-Type', 'application/xml; charset=UTF-8');
+});
+
 // Single Event View Page 
 Route::get('/events/{slug}', [EventController::class, 'show'])->name('events.show');
 

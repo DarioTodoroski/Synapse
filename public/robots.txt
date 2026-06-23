@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/login
+
+Allow: /
+
+Sitemap: https://synapsehr.mk/sitemap.xml
